@@ -141,12 +141,12 @@
 
   /* Primary button - gold accent with glow */
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-medium tracking-wide transition-all duration-300 rounded-full hover:bg-accent-hover hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0 text-sm md:text-base;
+    @apply inline-flex items-center justify-center px-4 py-2.5 sm:px-6 sm:py-3 bg-accent text-background font-medium tracking-wide transition-all duration-300 rounded-full hover:bg-accent-hover hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0 text-xs sm:text-sm md:text-base;
   }
 
   /* Secondary button - outlined with glass feel */
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-white/10 text-foreground font-medium tracking-wide transition-all duration-300 rounded-full hover:bg-white/5 hover:border-white/20 backdrop-blur-sm text-sm md:text-base;
+    @apply inline-flex items-center justify-center px-4 py-2.5 sm:px-6 sm:py-3 border border-white/10 text-foreground font-medium tracking-wide transition-all duration-300 rounded-full hover:bg-white/5 hover:border-white/20 backdrop-blur-sm text-xs sm:text-sm md:text-base;
   }
 
   /* Glass Card - The modern standard */
