@@ -36,6 +36,7 @@ export type CaseStudyLinkMap = {
 export type CaseStudySection =
     | { type: "overview" | "problem" | "solution" | "takeaway"; title: string; body: string }
     | { type: "outcome"; title: string; body: string; quote?: string; stat?: { value: string; label: string } }
+    | { type: "image"; src: string; alt: string; caption?: string }
     | { type: "features" | "stack"; title: string; bullets: string[] };
 
 export type CaseStudyCta = {

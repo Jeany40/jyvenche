@@ -49,6 +49,12 @@
             "body": "A platform-first architecture composed of distinct but connected systems: streaming library, album experiences, broadcast publishing, and an admin dashboard—sharing a consistent foundation and design language."
         },
         {
+            "type": "image",
+            "src": "/og.jpg",
+            "alt": "Fondamantal Admin Dashboard Interface",
+            "caption": "The unified admin dashboard for managing all platform content."
+        },
+        {
             "type": "features",
             "title": "Key Features",
             "bullets": [

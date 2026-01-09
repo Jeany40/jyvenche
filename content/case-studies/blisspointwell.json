@@ -31,6 +31,12 @@
             "body": "A clean, minimal system focused on information hierarchy, calm visual rhythm, predictable navigation, and mobile-first responsiveness—removing friction rather than adding features."
         },
         {
+            "type": "image",
+            "src": "/og.jpg",
+            "alt": "BlissPointWell Homepage",
+            "caption": "A calm, reassuring homepage design for mental health patients."
+        },
+        {
             "type": "features",
             "title": "Key Features",
             "bullets": [
@@ -53,7 +59,12 @@
         {
             "type": "outcome",
             "title": "Outcome",
-            "body": "A composed, professional healthcare website that supports patient confidence and serves as a stable foundation for future growth."
+            "body": "A composed, professional healthcare website that supports patient confidence and serves as a stable foundation for future growth.",
+            "stat": {
+                "value": "100%",
+                "label": "HIPAA/GDPR Compliance"
+            },
+            "quote": "A digital presence that finally feels as professional as our practice."
         },
         {
             "type": "takeaway",

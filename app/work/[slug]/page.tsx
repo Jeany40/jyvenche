@@ -147,6 +147,36 @@ function renderSection(section: CaseStudySection, index: number) {
                 </section>
             )
 
+        case 'image':
+            return (
+                <section key={index} className="py-12 border-t border-white/10">
+                    <figure className="max-w-5xl mx-auto">
+                        <div className="rounded-xl border border-white/10 bg-black/50 overflow-hidden shadow-2xl">
+                            {/* Browser Header */}
+                            <div className="h-8 bg-white/5 border-b border-white/5 flex items-center px-4 gap-2">
+                                <div className="w-2.5 h-2.5 rounded-full bg-red-500/20" />
+                                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20" />
+                                <div className="w-2.5 h-2.5 rounded-full bg-green-500/20" />
+                            </div>
+                            {/* Image Container */}
+                            <div className="relative aspect-video bg-white/5">
+                                {/* Using standard img tag for now until generic Image component is set up or placeholder strategy confirmed */}
+                                <img
+                                    src={section.src}
+                                    alt={section.alt}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+                        {section.caption && (
+                            <figcaption className="mt-4 text-center text-sm text-white/40 italic">
+                                {section.caption}
+                            </figcaption>
+                        )}
+                    </figure>
+                </section>
+            )
+
         default:
             return null
     }
