@@ -65,7 +65,7 @@ export default function Navbar({ brand, items }: NavbarProps) {
                     <img
                         src="/logo-premium.png"
                         alt="Jyvenche Logo"
-                        className="w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110"
+                        className="w-20 h-20 object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                 </Link>
 
