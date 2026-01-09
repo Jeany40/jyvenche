@@ -111,7 +111,7 @@ export default function SelectedWork({ intro, featured, secondary }: SelectedWor
                 </Link>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-3 items-stretch">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-6 items-start">
                 {/* Featured card spans 2 columns on desktop */}
                 <div className="lg:col-span-2 space-y-4 animate-fade-in [animation-delay:200ms]">
                     <WorkCard {...featured} featured index={0} />
@@ -134,7 +134,7 @@ export default function SelectedWork({ intro, featured, secondary }: SelectedWor
                 </div>
 
                 {/* Secondary card */}
-                <div className="lg:col-span-1 h-full animate-fade-in [animation-delay:400ms]">
+                <div className="lg:col-span-1 animate-fade-in [animation-delay:400ms]">
                     <WorkCard {...secondary} index={1} />
                 </div>
             </div>
