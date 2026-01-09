@@ -246,16 +246,6 @@ export type ServicesContent = {
     finalCta: { label: string; href: string };
 };
 
-export type PricingContent = {
-    title: string;
-    intro: string;
-    minimum: string;
-    ranges: Array<{ service: string; range: string }>;
-    retainers: Array<{ type: string; range: string }>;
-    paymentStructure: string[];
-    finalCta: { label: string; href: string };
-};
-
 export type AboutContent = {
     title: string;
     intro: string;
