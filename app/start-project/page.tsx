@@ -34,10 +34,19 @@ export default function StartProjectPage() {
                             <h2 className="text-2xl font-semibold tracking-tight mb-6">{startProject.leftColumn.howItWorksTitle}</h2>
                             <div className="space-y-4">
                                 {startProject.leftColumn.howItWorksSteps.map((s, i) => (
-                                    <div key={s.title} className="p-6 rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition-colors relative overflow-hidden">
-                                        <div className="absolute top-0 right-0 p-4 text-xs font-bold text-white/10 text-right">0{i + 1}</div>
-                                        <h3 className="text-lg font-semibold text-white mb-2">{s.title}</h3>
-                                        <p className="text-sm text-foreground-secondary leading-relaxed">{s.body}</p>
+                                    <div key={s.title} className="p-6 rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition-colors relative overflow-hidden group">
+                                        <div className="absolute -top-2 -right-1 text-5xl font-serif font-bold text-white/[0.03] group-hover:text-accent/10 transition-colors select-none">
+                                            {String(i + 1).padStart(2, '0')}
+                                        </div>
+                                        <div className="flex items-start gap-4">
+                                            <span className="flex-shrink-0 w-8 h-8 rounded-full border border-accent/30 bg-accent/5 flex items-center justify-center text-xs font-semibold text-accent">
+                                                {i + 1}
+                                            </span>
+                                            <div>
+                                                <h3 className="text-lg font-semibold text-white mb-2">{s.title}</h3>
+                                                <p className="text-sm text-foreground-secondary leading-relaxed">{s.body}</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

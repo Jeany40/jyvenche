@@ -70,11 +70,11 @@ function renderSection(section: CaseStudySection, index: number) {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {section.bullets?.map((bullet, i) => (
-                            <div key={i} className="flex items-start gap-4">
-                                <div className="w-8 h-8 flex-shrink-0 rounded-full border border-white/10 flex items-center justify-center text-xs text-white/50">
+                            <div key={i} className="flex items-start gap-4 group">
+                                <span className="flex-shrink-0 w-10 h-10 rounded-full border border-accent/20 bg-accent/5 flex items-center justify-center text-sm font-semibold text-accent/70 group-hover:text-accent group-hover:border-accent/40 transition-colors">
                                     {String(i + 1).padStart(2, '0')}
-                                </div>
-                                <p className="text-white/70 text-sm leading-relaxed">
+                                </span>
+                                <p className="text-white/70 text-sm leading-relaxed pt-2">
                                     {bullet}
                                 </p>
                             </div>
