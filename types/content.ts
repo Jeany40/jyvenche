@@ -267,9 +267,6 @@ export type StartProjectPageContent = {
         howItWorksSteps: Array<{ title: string; body: string }>;
         whatIBuildTitle: string;
         whatIBuildBullets: string[];
-        budgetTitle: string;
-        budgetBullets: string[];
-        minimumProject: string;
         timelineTitle: string;
         timelineBullets: string[];
     };

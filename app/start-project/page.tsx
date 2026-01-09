@@ -64,23 +64,6 @@ export default function StartProjectPage() {
                                 ))}
                             </ul>
                         </section>
-
-                        {/* Budgets */}
-                        <section className="glass-card">
-                            <h2 className="text-xl font-semibold tracking-tight mb-4">{startProject.leftColumn.budgetTitle}</h2>
-                            <ul className="space-y-3 mb-6 list-none">
-                                {startProject.leftColumn.budgetBullets.map((b) => (
-                                    <li key={b} className="flex gap-3 items-center text-sm text-foreground-secondary">
-                                        <span className="text-accent">→</span>
-                                        <span>{b}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="pt-4 border-t border-white/10">
-                                <p className="text-sm font-medium text-white/80">{startProject.leftColumn.minimumProject}</p>
-                            </div>
-                        </section>
-
                         {/* Timeline */}
                         <section className="opacity-80">
                             <h2 className="text-xl font-semibold tracking-tight mb-4">{startProject.leftColumn.timelineTitle}</h2>
