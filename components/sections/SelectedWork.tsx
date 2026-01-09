@@ -60,8 +60,7 @@ function WorkCard({
     index = 0,
 }: SelectedWorkCard & { featured?: boolean; index?: number }) {
     return (
-        <div className={`relative h-full flex flex-col justify-between group rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:border-accent/40 ${featured ? "min-h-[320px] sm:min-h-[400px]" : "min-h-[280px] sm:min-h-[300px]"
-            }`}>
+        <div className="relative min-h-[280px] sm:min-h-[300px] flex flex-col justify-between group rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:border-accent/40">
             {/* Parallax Background Layer */}
             <ParallaxBackground index={index} />
 
