@@ -130,9 +130,20 @@ export default function StartProjectForm({ successHeadline, successBody }: Start
 
     return (
         <form onSubmit={handleSubmit} className="glass-card">
-            <div className="hidden">
+            {/* Honeypot field - hidden from users, visible to bots */}
+            <div
+                className="absolute left-[-9999px] opacity-0 pointer-events-none"
+                aria-hidden="true"
+            >
                 <label htmlFor="companyWebsite">Company Website</label>
-                <input id="companyWebsite" name="companyWebsite" value={data.companyWebsite} onChange={handleChange} autoComplete="off" />
+                <input
+                    id="companyWebsite"
+                    name="companyWebsite"
+                    value={data.companyWebsite}
+                    onChange={handleChange}
+                    autoComplete="off"
+                    tabIndex={-1}
+                />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
