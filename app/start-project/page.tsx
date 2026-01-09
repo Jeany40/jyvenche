@@ -55,7 +55,7 @@ export default function StartProjectPage() {
                         {/* What I build */}
                         <section>
                             <h2 className="text-xl font-semibold tracking-tight mb-4">{startProject.leftColumn.whatIBuildTitle}</h2>
-                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none">
                                 {startProject.leftColumn.whatIBuildBullets.map((b) => (
                                     <li key={b} className="flex gap-3 items-center text-sm text-foreground-secondary">
                                         <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
@@ -68,7 +68,7 @@ export default function StartProjectPage() {
                         {/* Budgets */}
                         <section className="glass-card">
                             <h2 className="text-xl font-semibold tracking-tight mb-4">{startProject.leftColumn.budgetTitle}</h2>
-                            <ul className="space-y-3 mb-6">
+                            <ul className="space-y-3 mb-6 list-none">
                                 {startProject.leftColumn.budgetBullets.map((b) => (
                                     <li key={b} className="flex gap-3 items-center text-sm text-foreground-secondary">
                                         <span className="text-accent">→</span>
@@ -84,7 +84,7 @@ export default function StartProjectPage() {
                         {/* Timeline */}
                         <section className="opacity-80">
                             <h2 className="text-xl font-semibold tracking-tight mb-4">{startProject.leftColumn.timelineTitle}</h2>
-                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none">
                                 {startProject.leftColumn.timelineBullets.map((b) => (
                                     <li key={b} className="flex gap-3 items-center text-sm text-foreground-muted">
                                         <span className="w-1.5 h-1.5 rounded-full bg-white/20 flex-shrink-0" />

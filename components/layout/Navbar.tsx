@@ -72,7 +72,9 @@ export default function Navbar({ brand, items }: NavbarProps) {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-6">
                     {items.map((item) => {
-                        const isActive = pathname === item.href;
+                        const isActive = item.href === "/"
+                            ? pathname === "/"
+                            : pathname === item.href || pathname.startsWith(item.href + "/");
                         return (
                             <Link
                                 key={item.href}
@@ -113,7 +115,9 @@ export default function Navbar({ brand, items }: NavbarProps) {
                     >
                         <div className="flex flex-col items-center gap-6 w-full">
                             {items.map((item) => {
-                                const isActive = pathname === item.href;
+                                const isActive = item.href === "/"
+                                    ? pathname === "/"
+                                    : pathname === item.href || pathname.startsWith(item.href + "/");
                                 return (
                                     <Link
                                         key={item.href}

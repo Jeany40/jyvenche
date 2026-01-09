@@ -129,18 +129,19 @@ export default function StartProjectForm({ successHeadline, successBody }: Start
     }
 
     return (
-        <form onSubmit={handleSubmit} className="glass-card">
+        <form onSubmit={handleSubmit} className="glass-card relative">
             {/* Contact Section */}
             <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2">
-                    01. Contact Details
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2 flex items-center gap-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white text-xs font-bold">01</span>
+                    <span>Contact Details</span>
                 </h3>
 
-                {/* Honeypot field - hidden from users, visible to bots */}
-                <div
-                    className="absolute left-[-9999px] opacity-0 pointer-events-none"
-                    aria-hidden="true"
-                >
+                {/* Honeypot field (anti-spam)
+                    - Keep it in the DOM so bots can fill it
+                    - Keep it fully hidden for real users
+                */}
+                <div className="hidden" aria-hidden="true">
                     <label htmlFor="companyWebsite">Company Website</label>
                     <input
                         id="companyWebsite"
@@ -148,7 +149,7 @@ export default function StartProjectForm({ successHeadline, successBody }: Start
                         value={data.companyWebsite}
                         onChange={handleChange}
                         autoComplete="off"
-                        tabIndex={-1}
+                        tabIndex={-1} // Prevent keyboard focus
                     />
                 </div>
 
@@ -225,8 +226,9 @@ export default function StartProjectForm({ successHeadline, successBody }: Start
 
             {/* Project Section */}
             <div className="mt-12">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2">
-                    02. Project Overview
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2 flex items-center gap-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white text-xs font-bold">02</span>
+                    <span>Project Overview</span>
                 </h3>
 
                 <div>
@@ -303,8 +305,9 @@ export default function StartProjectForm({ successHeadline, successBody }: Start
 
             {/* Logistics Section */}
             <div className="mt-12">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2">
-                    03. Logistics
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2 flex items-center gap-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white text-xs font-bold">03</span>
+                    <span>Logistics</span>
                 </h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

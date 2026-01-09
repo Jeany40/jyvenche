@@ -24,7 +24,7 @@ export default function AboutPage() {
                 {/* Philosophy */}
                 <section className="mt-20 glass-card animate-fade-in [animation-delay:200ms]">
                     <h2 className="text-2xl font-semibold tracking-tight mb-8">What I Focus On</h2>
-                    <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 list-none">
                         {about.philosophy.map((p) => (
                             <li key={p} className="flex gap-4 items-start p-4 rounded-xl hover:bg-white/[0.03] transition-colors">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
@@ -53,7 +53,7 @@ export default function AboutPage() {
                         <h2 className="text-xl font-semibold tracking-tight text-white mb-6 flex items-center gap-2">
                             <span className="text-accent">✓</span> Good Fit If You Value
                         </h2>
-                        <ul className="space-y-4">
+                        <ul className="space-y-4 list-none">
                             {about.fit.goodFor.map((item) => (
                                 <li key={item} className="flex gap-4 items-start">
                                     <span className="w-1.5 h-1.5 mt-2 rounded-full bg-white/40 flex-shrink-0" />
@@ -67,7 +67,7 @@ export default function AboutPage() {
                         <h2 className="text-xl font-semibold tracking-tight text-white mb-6 text-white/50">
                             Not a Fit If You Need
                         </h2>
-                        <ul className="space-y-4">
+                        <ul className="space-y-4 list-none">
                             {about.fit.notFor.map((item) => (
                                 <li key={item} className="flex gap-4 items-start">
                                     <span className="w-1.5 h-1.5 mt-2 rounded-full bg-white/10 flex-shrink-0" />
