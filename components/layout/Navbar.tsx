@@ -103,39 +103,38 @@ export default function Navbar({ brand, items }: NavbarProps) {
                     </div>
                 </button>
 
-                {/* Mobile Overlay */}
-                {/* Mobile Overlay - Nuclear Option: Absolute Simplicity */}
-                <div
-                    id="mobile-menu"
-                    role="dialog"
-                    aria-modal="true"
-                    className={`fixed inset-0 z-[999] bg-black flex flex-col pt-24 pb-10 px-6 overflow-y-auto md:hidden ${mobileOpen ? "flex" : "hidden"
-                        }`}
-                >
-                    <div className="flex flex-col items-center gap-6 w-full">
-                        {items.map((item) => {
-                            const isActive = pathname === item.href;
-                            // Explicit inline style to guarantee text color on mobile overlay
-                            return (
-                                <Link
-                                    key={item.href}
-                                    href={item.href}
-                                    className={`text-lg font-bold tracking-tight py-3 block w-full text-center ${isActive ? "text-accent" : "text-white"
-                                        }`}
-                                    style={{ color: isActive ? '#C9A962' : '#FFFFFF' }}
-                                >
-                                    {item.label}
-                                </Link>
-                            );
-                        })}
+                {/* Mobile Overlay - Only render when open */}
+                {mobileOpen && (
+                    <div
+                        id="mobile-menu"
+                        role="dialog"
+                        aria-modal="true"
+                        className="fixed inset-0 z-[999] bg-black flex flex-col pt-24 pb-10 px-6 overflow-y-auto md:hidden"
+                    >
+                        <div className="flex flex-col items-center gap-6 w-full">
+                            {items.map((item) => {
+                                const isActive = pathname === item.href;
+                                return (
+                                    <Link
+                                        key={item.href}
+                                        href={item.href}
+                                        className={`text-lg font-bold tracking-tight py-3 block w-full text-center ${isActive ? "text-accent" : "text-white"
+                                            }`}
+                                        style={{ color: isActive ? '#C9A962' : '#FFFFFF' }}
+                                    >
+                                        {item.label}
+                                    </Link>
+                                );
+                            })}
 
-                        <div className="mt-12 w-full flex justify-center border-t border-white/20 pt-8">
-                            <Link href="/" className="text-xs uppercase tracking-[0.2em] text-white/50">
-                                {brand}
-                            </Link>
+                            <div className="mt-12 w-full flex justify-center border-t border-white/20 pt-8">
+                                <Link href="/" className="text-xs uppercase tracking-[0.2em] text-white/50">
+                                    {brand}
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
             </nav>
         </header>
     );
