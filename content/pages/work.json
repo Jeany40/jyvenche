@@ -1,6 +1,30 @@
 {
     "title": "Work",
     "intro": "A curated selection of projects that demonstrate platform thinking, clean execution, and scalable structure.",
+    "howIThink": {
+        "title": "How I Think",
+        "body": "I approach every project as a system—not just a collection of pages. Clarity, maintainability, and real-world durability guide every decision. The goal is always a product that works well today and remains manageable as it grows."
+    },
+    "capabilities": {
+        "title": "Capabilities",
+        "bullets": [
+            "React / Next.js frontends with component-based architecture",
+            "Platform and dashboard development for internal operations",
+            "Responsive, mobile-first builds with performance awareness",
+            "Clean UX structure and information hierarchy",
+            "Scalable systems designed for long-term ownership"
+        ]
+    },
+    "deliverables": {
+        "title": "What Clients Receive",
+        "bullets": [
+            "Design direction and UX structure",
+            "Production-ready frontend build",
+            "QA review and cross-device testing",
+            "Handoff documentation for future maintenance",
+            "Post-launch support as needed"
+        ]
+    },
     "featured": {
         "title": "Fondamantal",
         "label": "Music & Media Platform",

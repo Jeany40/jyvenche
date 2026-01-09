@@ -14,51 +14,58 @@
         "status": "Live",
         "partOf": "Fondamantal Platform"
     },
-    "sections": [
+    "overview": "The Digital Album Player presents releases as cohesive digital products—encouraging complete listening rather than fragmented track consumption. It transforms albums from playlists into intentional, immersive experiences.",
+    "problem": "Albums are often consumed out of sequence with little continuity or brand ownership when hosted purely on third-party platforms. The artistic intention and narrative arc are lost in shuffle-driven consumption.",
+    "approach": [
+        "Designed an album-centric layout unifying artwork, tracklist, and controls",
+        "Built sequential playback encouraging album-flow listening",
+        "Created minimal UI keeping focus on the musical experience",
+        "Integrated seamlessly with the broader platform visual language",
+        "Established reusable structure for future album releases"
+    ],
+    "keyFeatures": [
+        "Album-centric layout unifying artwork, tracklist, and controls",
+        "Sequential playback designed for complete album flow",
+        "Minimal UI reducing distractions during listening",
+        "Consistent visual experience across all devices",
+        "Reusable template structure for future releases",
+        "Artwork presentation honoring visual identity",
+        "Progress indicators for album completion",
+        "Seamless integration within the Fondamantal ecosystem"
+    ],
+    "technicalNotes": [
+        "React / Next.js with reusable media components",
+        "Shared audio player architecture with Music Library",
+        "Modern responsive layout system",
+        "Dynamic album data loading for scalability",
+        "Consistent styling tokens across platform",
+        "Optimized image handling for album artwork"
+    ],
+    "outcomes": [
+        "Controlled, immersive release experience strengthening engagement",
+        "Platform positioned as a destination for complete album listening",
+        "Reusable template reducing effort for future releases",
+        "Brand cohesion maintained across all album experiences",
+        "[Optional metric: listen-through or engagement rates]"
+    ],
+    "gallery": [
         {
-            "type": "overview",
-            "title": "Overview",
-            "body": "The Digital Album Player presents releases as cohesive digital products—encouraging complete listening rather than fragmented track consumption."
+            "src": "/case-studies/fondamantal-album-player/album-view.jpg",
+            "alt": "Digital Album Player interface",
+            "caption": "Album-centric layout presenting releases as cohesive experiences"
         },
         {
-            "type": "problem",
-            "title": "The Problem",
-            "body": "Albums are often consumed out of sequence with little continuity or brand ownership when hosted purely on third-party platforms."
-        },
+            "src": "/case-studies/fondamantal-album-player/tracklist.jpg",
+            "alt": "Album tracklist with playback controls",
+            "caption": "Sequential tracklist encouraging complete album listening"
+        }
+    ],
+    "testimonials": [
         {
-            "type": "solution",
-            "title": "The Solution",
-            "body": "A focused album view that preserves sequencing, integrates artwork, minimizes distractions, and aligns with the broader platform's visual language."
-        },
-        {
-            "type": "features",
-            "title": "Key Features",
-            "bullets": [
-                "Album-centric layout unifying artwork, tracklist, and controls",
-                "Sequential playback designed for album flow",
-                "Minimal UI to keep focus on the music",
-                "Consistent experience across devices",
-                "Reusable structure for future releases"
-            ]
-        },
-        {
-            "type": "stack",
-            "title": "Technology Stack",
-            "bullets": [
-                "React / Next.js",
-                "Reusable media components",
-                "Modern layout system"
-            ]
-        },
-        {
-            "type": "outcome",
-            "title": "Outcome",
-            "body": "A controlled, immersive release experience that strengthens engagement and positions the platform as a destination."
-        },
-        {
-            "type": "takeaway",
-            "title": "Key Takeaway",
-            "body": "Productizing content creates deeper engagement and long-term brand value."
+            "quote": "[Optional testimonial]",
+            "name": "Anonymous",
+            "role": "Artist / Founder",
+            "project": "Fondamantal"
         }
     ],
     "cta": {

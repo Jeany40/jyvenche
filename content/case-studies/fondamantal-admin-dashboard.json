@@ -15,51 +15,58 @@
         "status": "Live",
         "partOf": "Fondamantal Platform"
     },
-    "sections": [
+    "overview": "The Admin Dashboard is the internal control center for the Fondamantal platform—tailored to platform structure and real workflows. It enables independent content management without developer intervention or generic CMS complexity.",
+    "problem": "Manual updates and generic CMS tools create inefficiency, workflow mismatch, and higher risk of errors during publishing. Off-the-shelf solutions rarely align with platform-specific needs.",
+    "approach": [
+        "Mapped real publishing workflows to identify core functionality requirements",
+        "Designed purpose-built controls aligned with specific platform needs",
+        "Created clear publishing paths to reduce mistakes and friction",
+        "Built a clean, distraction-free interface for focused operation",
+        "Established foundation for future access controls and analytics"
+    ],
+    "keyFeatures": [
+        "Purpose-built controls aligned with platform content structure",
+        "Clear publishing workflow reducing errors and friction",
+        "Foundation for controlled access and role management",
+        "Clean, distraction-free administrative interface",
+        "Scalable architecture for analytics and scheduling",
+        "Content separation matching platform organization",
+        "Real-time preview capabilities",
+        "Unified management across all platform subsystems"
+    ],
+    "technicalNotes": [
+        "React / Next.js with component-based admin UI",
+        "Structured layout system for consistent admin experience",
+        "Form validation and error handling for data integrity",
+        "API integration for content operations",
+        "Responsive design for tablet and desktop admin access",
+        "Clean separation from public-facing components"
+    ],
+    "outcomes": [
+        "Reduced operational overhead through streamlined workflows",
+        "Improved independence—content managed without developer intervention",
+        "Lower error rate through purpose-built publishing controls",
+        "Foundation established for future admin feature expansion",
+        "[Optional metric: publishing time or error reduction]"
+    ],
+    "gallery": [
         {
-            "type": "overview",
-            "title": "Overview",
-            "body": "The Admin Dashboard is the internal control center for the Fondamantal platform—tailored to platform structure and real workflows."
+            "src": "/case-studies/fondamantal-admin-dashboard/dashboard-overview.jpg",
+            "alt": "Admin Dashboard main interface",
+            "caption": "Purpose-built control center for platform content management"
         },
         {
-            "type": "problem",
-            "title": "The Problem",
-            "body": "Manual updates and generic CMS tools create inefficiency, workflow mismatch, and higher risk of errors during publishing."
-        },
+            "src": "/case-studies/fondamantal-admin-dashboard/content-editing.jpg",
+            "alt": "Content editing interface",
+            "caption": "Streamlined editing workflow tailored to platform needs"
+        }
+    ],
+    "testimonials": [
         {
-            "type": "solution",
-            "title": "The Solution",
-            "body": "A custom admin interface focused on content separation, predictable publishing paths, minimal UI complexity, and platform-specific controls."
-        },
-        {
-            "type": "features",
-            "title": "Key Features",
-            "bullets": [
-                "Purpose-built controls aligned with platform needs",
-                "Clear publishing workflow to reduce mistakes",
-                "Foundation for controlled access and roles",
-                "Clean, distraction-free interface",
-                "Scalable base for analytics/scheduling later"
-            ]
-        },
-        {
-            "type": "stack",
-            "title": "Technology Stack",
-            "bullets": [
-                "React / Next.js",
-                "Component-based admin UI",
-                "Structured layout system"
-            ]
-        },
-        {
-            "type": "outcome",
-            "title": "Outcome",
-            "body": "Reduced operational overhead and improved independence—content can be managed confidently without developer intervention."
-        },
-        {
-            "type": "takeaway",
-            "title": "Key Takeaway",
-            "body": "Custom internal tools improve operational efficiency when designed around real workflows."
+            "quote": "[Optional testimonial]",
+            "name": "Anonymous",
+            "role": "Artist / Founder",
+            "project": "Fondamantal"
         }
     ],
     "cta": {

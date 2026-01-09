@@ -32,62 +32,68 @@
             "href": "/work/fondamantal-broadcast"
         }
     ],
-    "sections": [
+    "overview": "Fondamantal is a modular music and media platform built to centralize content ownership, presentation, and internal operations—reducing dependency on fragmented third-party tools. The platform serves as both a public-facing media hub and an operational backbone for content publishing.",
+    "problem": "Independent artists face fragmented distribution, limited brand control, and a lack of internal operational tooling when relying entirely on external platforms. Managing releases across multiple services creates friction and reduces long-term content ownership.",
+    "approach": [
+        "Designed a platform-first architecture with distinct but connected subsystems",
+        "Separated public experiences (library, albums, broadcast) from internal tools (admin dashboard)",
+        "Built a consistent design language shared across all platform components",
+        "Prioritized modular structure to allow independent evolution of each system",
+        "Established scalable content patterns for future expansion",
+        "Focused on brand ownership over third-party dependencies"
+    ],
+    "keyFeatures": [
+        "Modular platform architecture where systems evolve independently",
+        "Brand-controlled media experience across all touchpoints",
+        "Clear separation between public and internal systems",
+        "Unified streaming library with custom playback controls",
+        "Album-centric experiences preserving release narrative",
+        "First-party broadcast layer for announcements and updates",
+        "Purpose-built admin dashboard for content management",
+        "Consistent UX language across the entire ecosystem",
+        "Scalable content structure designed for long-term growth",
+        "Performance-optimized frontend with responsive design"
+    ],
+    "technicalNotes": [
+        "React / Next.js for component-based frontend architecture",
+        "Server-side rendering for performance and SEO",
+        "Modular component library shared across subsystems",
+        "Custom audio player implementation for brand control",
+        "Responsive layout system supporting mobile through desktop",
+        "Structured data patterns for content scalability",
+        "Clean separation of concerns between public and admin contexts"
+    ],
+    "outcomes": [
+        "Centralized platform supporting releases, audience engagement, and internal workflows",
+        "Reduced dependency on third-party distribution platforms",
+        "Unified brand experience across all content touchpoints",
+        "Operational independence for content publishing without developer intervention",
+        "Foundation established for future monetization and feature expansion",
+        "[Optional metric: content publishing workflow improvements]"
+    ],
+    "gallery": [
         {
-            "type": "overview",
-            "title": "Overview",
-            "body": "Fondamantal is a modular music and media platform built to centralize content ownership, presentation, and internal operations—reducing dependency on fragmented third-party tools."
+            "src": "/case-studies/fondamantal/platform-overview.jpg",
+            "alt": "Fondamantal platform homepage",
+            "caption": "The unified platform experience bringing together music, albums, and broadcasts"
         },
         {
-            "type": "problem",
-            "title": "The Problem",
-            "body": "Independent artists face fragmented distribution, limited brand control, and a lack of internal operational tooling when relying entirely on external platforms."
+            "src": "/case-studies/fondamantal/music-library.jpg",
+            "alt": "Music Library interface",
+            "caption": "Custom streaming library with brand-consistent playback controls"
         },
         {
-            "type": "solution",
-            "title": "The Solution",
-            "body": "A platform-first architecture composed of distinct but connected systems: streaming library, album experiences, broadcast publishing, and an admin dashboard—sharing a consistent foundation and design language."
-        },
+            "src": "/case-studies/fondamantal/admin-dashboard.jpg",
+            "alt": "Admin Dashboard interface",
+            "caption": "Purpose-built content management for platform operations"
+        }
+    ],
+    "testimonials": [
         {
-            "type": "image",
-            "src": "/og.jpg",
-            "alt": "Fondamantal Admin Dashboard Interface",
-            "caption": "The unified admin dashboard for managing all platform content."
-        },
-        {
-            "type": "features",
-            "title": "Key Features",
-            "bullets": [
-                "Modular platform architecture (systems evolve independently)",
-                "Brand-controlled media experience",
-                "Clear separation of public and internal systems",
-                "Scalable content structure for growth",
-                "Consistent UX across the ecosystem"
-            ]
-        },
-        {
-            "type": "stack",
-            "title": "Technology Stack",
-            "bullets": [
-                "React / Next.js",
-                "Component-based frontend architecture",
-                "Performance-focused rendering patterns"
-            ]
-        },
-        {
-            "type": "outcome",
-            "title": "Outcome",
-            "body": "A centralized platform that supports releases, audience engagement, and internal workflows—positioned for future monetization and expansion.",
-            "stat": {
-                "value": "4h → 30m",
-                "label": "Content publishing workflow reduction"
-            },
-            "quote": "A unified platform that finally gives us full control over our content ecosystem."
-        },
-        {
-            "type": "takeaway",
-            "title": "Key Takeaway",
-            "body": "Platform thinking enables long-term ownership, scalability, and operational control."
+            "quote": "[Optional testimonial]",
+            "name": "Anonymous",
+            "role": "Artist / Founder",
+            "project": "Fondamantal"
         }
     ],
     "cta": {

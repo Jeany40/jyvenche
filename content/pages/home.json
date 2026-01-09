@@ -13,6 +13,43 @@
         },
         "trustLine": "Platforms, admin tools, and high-performance websites built for real operations—not templates."
     },
+    "whatYouGet": {
+        "title": "What You Get",
+        "bullets": [
+            "A production-ready system designed for your real needs",
+            "Clean architecture that scales with your business",
+            "UX structure built for clarity and confidence",
+            "Performance-conscious frontend implementation",
+            "Handoff documentation for long-term maintainability"
+        ]
+    },
+    "proof": {
+        "title": "See It Live",
+        "body": "Every project ships production-ready. Review live work to see the quality and structure firsthand.",
+        "cta": {
+            "label": "View Case Studies",
+            "href": "/work"
+        },
+        "liveLinks": [
+            {
+                "label": "Fondamantal Platform",
+                "href": "https://www.fondamantal.com"
+            },
+            {
+                "label": "BlissPointWell",
+                "href": "https://www.blisspointwell.com"
+            }
+        ]
+    },
+    "processLine": {
+        "title": "How Projects Work",
+        "steps": [
+            "Discovery",
+            "Build",
+            "Ship",
+            "Support"
+        ]
+    },
     "selectedWork": {
         "intro": "A focused set of projects that demonstrate platform thinking, clean execution, and scalable structure.",
         "featured": {

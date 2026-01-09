@@ -14,51 +14,58 @@
         "status": "Live",
         "partOf": "Fondamantal Platform"
     },
-    "sections": [
+    "overview": "The Music Library is the core listening experience within the Fondamantal platform—built as a first-class product feature rather than an external embed. It provides a cohesive, brand-controlled environment for music discovery and playback.",
+    "problem": "Third-party players limit branding, introduce distractions, and reduce control over navigation and performance. Embedded solutions fragment the user experience and diminish platform ownership.",
+    "approach": [
+        "Designed a custom library interface focused on track scanning and quick playback",
+        "Built brand-consistent player UI aligned with the broader platform aesthetic",
+        "Implemented lightweight interaction patterns prioritizing speed",
+        "Created responsive layouts functioning across all device sizes",
+        "Established expandable architecture for future playlist and filtering features"
+    ],
+    "keyFeatures": [
+        "Clean track listing optimized for scanning and quick playback",
+        "Brand-consistent player UI aligned with platform design language",
+        "Lightweight interaction patterns for performance",
+        "Custom audio controls with seamless playback behavior",
+        "Responsive layout across mobile, tablet, and desktop",
+        "Minimal UI noise keeping focus on the music",
+        "Expandable foundation for playlists and filtering",
+        "Integrated within the broader Fondamantal ecosystem"
+    ],
+    "technicalNotes": [
+        "React / Next.js with component-based audio UI",
+        "Custom audio player implementation for full control",
+        "Modern layout system with responsive breakpoints",
+        "Optimized asset loading for playback performance",
+        "Shared component library with other platform subsystems",
+        "Clean state management for playback controls"
+    ],
+    "outcomes": [
+        "Cohesive, controlled listening environment strengthening brand ownership",
+        "Improved user experience compared to third-party embeds",
+        "Foundation established for deeper audience engagement features",
+        "Seamless integration with other platform components",
+        "[Optional metric: engagement or playback improvements]"
+    ],
+    "gallery": [
         {
-            "type": "overview",
-            "title": "Overview",
-            "body": "The Music Library is the core listening experience within the Fondamantal platform—built as a first-class product feature rather than an external embed."
+            "src": "/case-studies/fondamantal-music-library/library-view.jpg",
+            "alt": "Music Library track listing",
+            "caption": "Clean track listing designed for easy scanning and quick playback"
         },
         {
-            "type": "problem",
-            "title": "The Problem",
-            "body": "Third-party players limit branding, introduce distractions, and reduce control over navigation and performance."
-        },
+            "src": "/case-studies/fondamantal-music-library/player-controls.jpg",
+            "alt": "Custom audio player controls",
+            "caption": "Brand-consistent playback controls integrated with the platform"
+        }
+    ],
+    "testimonials": [
         {
-            "type": "solution",
-            "title": "The Solution",
-            "body": "A custom library focused on clear track organization, predictable playback behavior, minimal UI noise, and seamless integration with the platform."
-        },
-        {
-            "type": "features",
-            "title": "Key Features",
-            "bullets": [
-                "Clean track listing built for scanning and quick playback",
-                "Brand-consistent player UI aligned with the platform",
-                "Lightweight interaction patterns for speed",
-                "Responsive layout across devices",
-                "Expandable foundation for playlists/filtering later"
-            ]
-        },
-        {
-            "type": "stack",
-            "title": "Technology Stack",
-            "bullets": [
-                "React / Next.js",
-                "Component-based audio UI",
-                "Modern layout system"
-            ]
-        },
-        {
-            "type": "outcome",
-            "title": "Outcome",
-            "body": "A cohesive, controlled listening environment that strengthens brand ownership and sets a foundation for deeper audience features."
-        },
-        {
-            "type": "takeaway",
-            "title": "Key Takeaway",
-            "body": "Owning the playback layer improves branding, performance, and long-term flexibility."
+            "quote": "[Optional testimonial]",
+            "name": "Anonymous",
+            "role": "Artist / Founder",
+            "project": "Fondamantal"
         }
     ],
     "cta": {

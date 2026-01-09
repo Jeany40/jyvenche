@@ -1,6 +1,47 @@
 {
     "title": "Services",
     "intro": "I design and build digital systems meant to last—focused on structure, clarity, and maintainability.",
+    "packages": [
+        {
+            "title": "Launch Website",
+            "description": "A complete, production-ready website built for clarity and credibility.",
+            "forWho": "Businesses, practices, or professionals who need a focused web presence that establishes trust and communicates clearly.",
+            "deliverables": [
+                "UX structure and page planning",
+                "Responsive frontend design and build",
+                "Content integration and hierarchy",
+                "Cross-device QA and testing",
+                "Launch preparation and handoff documentation"
+            ],
+            "timeline": "Typically 2–4 weeks depending on scope and content readiness"
+        },
+        {
+            "title": "Platform / Dashboard",
+            "description": "Custom web applications and internal tools built as structured systems.",
+            "forWho": "Teams or businesses that need custom platforms, admin dashboards, or internal tools designed around real workflows.",
+            "deliverables": [
+                "System architecture and UX structure",
+                "Component-based frontend development",
+                "Admin or internal interface design",
+                "API integration as needed",
+                "Documentation and operational handoff"
+            ],
+            "timeline": "Typically 1–3 months depending on complexity and feature scope"
+        },
+        {
+            "title": "Redesign + Upgrade",
+            "description": "Modernize existing systems with improved structure, performance, and UX.",
+            "forWho": "Businesses with existing sites or applications that need structural improvements, performance optimization, or design refresh.",
+            "deliverables": [
+                "Current system audit and recommendations",
+                "Redesigned UX and updated frontend",
+                "Performance improvements",
+                "Migration support as needed",
+                "Updated documentation"
+            ],
+            "timeline": "Typically 3–8 weeks depending on current state and scope"
+        }
+    ],
     "services": [
         {
             "title": "Brand & Marketing Websites",

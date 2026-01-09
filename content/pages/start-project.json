@@ -2,6 +2,41 @@
     "title": "Start a Project",
     "intro": "Use the form below to share details about your project. This helps determine whether it's a good fit and how to approach scope, timeline, and structure.",
     "responseTime": "You'll receive a response within 1–2 business days.",
+    "beforeSubmitChecklist": {
+        "title": "Before You Submit",
+        "bullets": [
+            "Have a general idea of your project scope and goals",
+            "Know your approximate budget range",
+            "Be ready to share examples of sites or systems you admire",
+            "Consider your timeline expectations",
+            "Identify who will be the main point of contact"
+        ]
+    },
+    "whatHappensNext": {
+        "title": "What Happens Next",
+        "steps": [
+            {
+                "step": "Review",
+                "description": "I review each submission personally to assess fit, scope, and feasibility."
+            },
+            {
+                "step": "Response",
+                "description": "You'll hear back within 1–2 business days with initial thoughts."
+            },
+            {
+                "step": "Discovery Call",
+                "description": "If aligned, we schedule a brief call to discuss details."
+            },
+            {
+                "step": "Proposal",
+                "description": "You'll receive a detailed proposal outlining scope, timeline, and investment."
+            }
+        ]
+    },
+    "notAFitNote": {
+        "title": "If It's Not a Fit",
+        "body": "Not every project is a match—and that's okay. If your project isn't aligned with my focus or availability, I'll let you know directly and, where possible, point you toward resources that might be a better fit."
+    },
     "leftColumn": {
         "howItWorksTitle": "How This Works",
         "howItWorksSteps": [

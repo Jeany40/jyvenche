@@ -10,66 +10,72 @@
         "role": [
             "Design",
             "Frontend Development",
-            "Structure"
+            "UX Structure"
         ],
         "status": "Live"
     },
-    "sections": [
+    "overview": "BlissPointWell is a private mental health practice website designed to establish trust, clarity, and professionalism for prospective patients. The site prioritizes simplicity, accessibility, and a reassuring tone—building confidence before the first appointment.",
+    "problem": "Healthcare websites often suffer from unclear hierarchy, cluttered layouts, and weak mobile usability—issues that reduce confidence and credibility in sensitive contexts where trust is essential.",
+    "approach": [
+        "Established a trust-forward design system with restrained typography and calm spacing",
+        "Prioritized mobile-first responsive design for accessibility across devices",
+        "Structured clear information hierarchy for service and credential presentation",
+        "Implemented privacy-conscious design practices throughout the experience",
+        "Removed friction points to create a predictable, reassuring navigation flow",
+        "Focused on clarity over features—simple structure for sensitive context"
+    ],
+    "keyFeatures": [
+        "Trust-forward design system with restrained typography and spacing",
+        "Clear service presentation using plain, accessible language",
+        "Mobile-first, fully responsive layout",
+        "Performance-conscious frontend structure",
+        "Accessibility-aware navigation and layout patterns",
+        "Privacy-conscious design approach",
+        "Calm visual rhythm supporting the therapeutic context",
+        "Predictable navigation reducing anxiety for new visitors",
+        "Credential and qualification presentation for credibility",
+        "Contact and scheduling pathways with clear expectations"
+    ],
+    "technicalNotes": [
+        "React / Next.js for component-based UI architecture",
+        "Modern styling system with responsive design tokens",
+        "Performance optimization for fast initial load",
+        "Semantic HTML structure for accessibility",
+        "Mobile-first breakpoint strategy",
+        "Clean, maintainable component architecture",
+        "Security-minded form handling practices"
+    ],
+    "outcomes": [
+        "Composed, professional healthcare website supporting patient confidence",
+        "Improved visitor experience with clear navigation and service presentation",
+        "Stable foundation established for future growth and feature additions",
+        "Privacy-conscious design practices implemented throughout",
+        "Accessible, mobile-friendly experience for all visitors",
+        "[Optional metric: booking or inquiry improvements]"
+    ],
+    "gallery": [
         {
-            "type": "overview",
-            "title": "Overview",
-            "body": "BlissPointWell is a private mental health practice website designed to establish trust, clarity, and professionalism for prospective patients. The site prioritizes simplicity, accessibility, and a reassuring tone."
+            "src": "/case-studies/blisspointwell/homepage.jpg",
+            "alt": "BlissPointWell homepage",
+            "caption": "A calm, reassuring homepage design for mental health patients"
         },
         {
-            "type": "problem",
-            "title": "The Problem",
-            "body": "Healthcare websites often suffer from unclear hierarchy, cluttered layouts, and weak mobile usability—issues that reduce confidence and credibility in sensitive contexts."
+            "src": "/case-studies/blisspointwell/services.jpg",
+            "alt": "Services page layout",
+            "caption": "Clear service presentation with accessible language"
         },
         {
-            "type": "solution",
-            "title": "The Solution",
-            "body": "A clean, minimal system focused on information hierarchy, calm visual rhythm, predictable navigation, and mobile-first responsiveness—removing friction rather than adding features."
-        },
+            "src": "/case-studies/blisspointwell/mobile.jpg",
+            "alt": "Mobile responsive design",
+            "caption": "Fully responsive experience across all device sizes"
+        }
+    ],
+    "testimonials": [
         {
-            "type": "image",
-            "src": "/og.jpg",
-            "alt": "BlissPointWell Homepage",
-            "caption": "A calm, reassuring homepage design for mental health patients."
-        },
-        {
-            "type": "features",
-            "title": "Key Features",
-            "bullets": [
-                "Trust-forward design system with restrained typography and spacing",
-                "Clear service presentation in plain language",
-                "Mobile-first, responsive layout",
-                "Performance-conscious frontend structure",
-                "Accessibility-aware layout and navigation"
-            ]
-        },
-        {
-            "type": "stack",
-            "title": "Technology Stack",
-            "bullets": [
-                "React / Next.js",
-                "Component-based UI architecture",
-                "Modern styling system"
-            ]
-        },
-        {
-            "type": "outcome",
-            "title": "Outcome",
-            "body": "A composed, professional healthcare website that supports patient confidence and serves as a stable foundation for future growth.",
-            "stat": {
-                "value": "100%",
-                "label": "HIPAA/GDPR Compliance"
-            },
-            "quote": "A digital presence that finally feels as professional as our practice."
-        },
-        {
-            "type": "takeaway",
-            "title": "Key Takeaway",
-            "body": "Clarity and restraint outperform complexity in trust-sensitive environments."
+            "quote": "[Optional testimonial]",
+            "name": "Anonymous",
+            "role": "Founder",
+            "project": "BlissPointWell"
         }
     ],
     "cta": {

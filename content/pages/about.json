@@ -7,6 +7,35 @@
         "Ownership and control",
         "Durability"
     ],
+    "workingStyle": {
+        "title": "Working Style",
+        "bullets": [
+            "Clear, async communication with regular progress updates",
+            "Collaborative process with structured feedback cycles",
+            "Documentation at every stage for transparency",
+            "Direct access—no layers, no account managers",
+            "Responsive communication during working hours"
+        ]
+    },
+    "qualityBar": {
+        "title": "Quality Standards",
+        "bullets": [
+            "Accessibility-aware design and development practices",
+            "Performance-conscious implementation from the start",
+            "Mobile-first, responsive architecture",
+            "Clean, maintainable code structure",
+            "Cross-device and cross-browser testing"
+        ]
+    },
+    "industries": {
+        "title": "Industries",
+        "bullets": [
+            "Healthcare and private practice",
+            "Music, media, and creative platforms",
+            "Internal tools and operational systems",
+            "Professional services and consulting"
+        ]
+    },
     "process": [
         "Discovery & Definition",
         "Design & Development",

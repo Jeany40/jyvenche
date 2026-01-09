@@ -14,51 +14,58 @@
         "status": "Live",
         "partOf": "Fondamantal Platform"
     },
-    "sections": [
+    "overview": "The Broadcast Platform is Fondamantal's first-party communication layer—centralizing announcements and updates outside third-party algorithm constraints. It provides permanent, brand-controlled messaging that integrates with the platform ecosystem.",
+    "problem": "External social platforms bury content, limit presentation consistency, and reduce long-term accessibility of important updates. Algorithm-driven feeds prioritize recency over importance.",
+    "approach": [
+        "Designed a lightweight publishing system for platform announcements",
+        "Built content permanence into the architecture—posts remain accessible indefinitely",
+        "Maintained brand consistency through shared design language",
+        "Integrated directly with the broader platform navigation",
+        "Created expandable foundation for categories and tagging"
+    ],
+    "keyFeatures": [
+        "Clear chronological structure for updates and announcements",
+        "Brand-consistent presentation across the ecosystem",
+        "Content permanence compared to ephemeral social feeds",
+        "Minimal UI keeping focus on the message content",
+        "Expandable foundation for tags and categories",
+        "Direct integration with platform navigation",
+        "Responsive reading experience across devices",
+        "First-party control over content visibility"
+    ],
+    "technicalNotes": [
+        "React / Next.js with reusable content components",
+        "Shared styling tokens with platform design system",
+        "Modern layout system for readable content presentation",
+        "Structured content architecture for expandability",
+        "Optimized loading for content-heavy pages",
+        "Clean URL structure for shareability"
+    ],
+    "outcomes": [
+        "Stable, brand-owned communication channel established",
+        "Reduced dependency on third-party distribution platforms",
+        "Platform identity strengthened through consistent messaging",
+        "Long-term content accessibility maintained",
+        "[Optional metric: engagement or reach improvements]"
+    ],
+    "gallery": [
         {
-            "type": "overview",
-            "title": "Overview",
-            "body": "The Broadcast Platform is Fondamantal's first-party communication layer—centralizing announcements and updates outside third-party algorithm constraints."
+            "src": "/case-studies/fondamantal-broadcast/broadcast-feed.jpg",
+            "alt": "Broadcast feed interface",
+            "caption": "Chronological broadcast feed with brand-consistent presentation"
         },
         {
-            "type": "problem",
-            "title": "The Problem",
-            "body": "External social platforms bury content, limit presentation consistency, and reduce long-term accessibility of important updates."
-        },
+            "src": "/case-studies/fondamantal-broadcast/post-detail.jpg",
+            "alt": "Individual broadcast post",
+            "caption": "Clean, focused reading experience for announcements"
+        }
+    ],
+    "testimonials": [
         {
-            "type": "solution",
-            "title": "The Solution",
-            "body": "A lightweight publishing system that preserves posts over time, maintains brand consistency, and integrates directly with the broader platform."
-        },
-        {
-            "type": "features",
-            "title": "Key Features",
-            "bullets": [
-                "Clear chronological structure for updates",
-                "Brand-consistent presentation across the ecosystem",
-                "Content permanence compared to social feeds",
-                "Minimal UI focused on the message",
-                "Expandable foundation for tags/categories later"
-            ]
-        },
-        {
-            "type": "stack",
-            "title": "Technology Stack",
-            "bullets": [
-                "React / Next.js",
-                "Reusable content components",
-                "Modern layout system"
-            ]
-        },
-        {
-            "type": "outcome",
-            "title": "Outcome",
-            "body": "A stable, brand-owned channel that strengthens platform identity and reduces dependency on third-party distribution."
-        },
-        {
-            "type": "takeaway",
-            "title": "Key Takeaway",
-            "body": "Owning the communication layer creates stability and long-term value."
+            "quote": "[Optional testimonial]",
+            "name": "Anonymous",
+            "role": "Artist / Founder",
+            "project": "Fondamantal"
         }
     ],
     "cta": {
