@@ -53,19 +53,19 @@ export default function CaseStudyCard({ title, label, summary, href, featured, i
             )}
 
             <div className="relative z-10">
-                <div className="text-xs uppercase tracking-[0.2em] text-accent/80 font-medium mb-3">
+                <div className="text-xs uppercase tracking-[0.2em] text-accent/80 font-medium mb-2 sm:mb-3">
                     {label}
                 </div>
-                <h3 className="text-2xl font-semibold tracking-tight text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/70 transition-all">
+                <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-white mb-3 sm:mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/70 transition-all">
                     {title}
                 </h3>
-                <p className="text-foreground-secondary leading-relaxed text-sm md:text-base">
+                <p className="text-foreground-secondary leading-relaxed text-sm">
                     {summary}
                 </p>
             </div>
 
-            <div className="relative z-10 mt-8 pt-6 border-t border-white/5 group-hover:border-white/10 transition-colors">
-                <Link href={href} className="flex items-center text-sm font-medium text-white hover:text-accent transition-colors">
+            <div className="relative z-10 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/5 group-hover:border-white/10 transition-colors">
+                <Link href={href} className="flex items-center text-sm font-medium text-white hover:text-accent transition-colors py-2">
                     View Case Study
                     <span className="ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">→</span>
                 </Link>

@@ -60,13 +60,13 @@ function WorkCard({
     index = 0,
 }: SelectedWorkCard & { featured?: boolean; index?: number }) {
     return (
-        <div className={`relative h-full flex flex-col justify-between group rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:border-accent/40 ${featured ? "min-h-[400px]" : "min-h-[300px]"
+        <div className={`relative h-full flex flex-col justify-between group rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:border-accent/40 ${featured ? "min-h-[320px] sm:min-h-[400px]" : "min-h-[280px] sm:min-h-[300px]"
             }`}>
             {/* Parallax Background Layer */}
             <ParallaxBackground index={index} />
 
             {/* Content Layer */}
-            <div className="relative z-10 p-8 flex flex-col h-full bg-black/20 group-hover:bg-black/10 transition-colors duration-500">
+            <div className="relative z-10 p-5 sm:p-8 flex flex-col h-full bg-black/20 group-hover:bg-black/10 transition-colors duration-500">
                 <div>
                     {/* Decorative top accent */}
                     {featured && (
@@ -75,20 +75,20 @@ function WorkCard({
                         </div>
                     )}
 
-                    <div className="text-xs uppercase tracking-[0.2em] text-accent font-medium mb-4 flex items-center gap-2">
+                    <div className="text-xs uppercase tracking-[0.2em] text-accent font-medium mb-3 sm:mb-4 flex items-center gap-2">
                         {label}
                         {featured && <span className="w-1.5 h-1.5 rounded-full bg-white/40" />}
                     </div>
-                    <h3 className="text-3xl font-semibold tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/70 transition-all">
+                    <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/70 transition-all">
                         {title}
                     </h3>
-                    <p className="mt-4 text-white/80 leading-relaxed max-w-lg">
+                    <p className="mt-3 sm:mt-4 text-sm sm:text-base text-white/80 leading-relaxed max-w-lg">
                         {summary}
                     </p>
                 </div>
 
-                <div className="mt-auto pt-8">
-                    <Link href={href} className="inline-flex items-center text-sm font-medium text-white hover:text-accent transition-colors">
+                <div className="mt-auto pt-6 sm:pt-8">
+                    <Link href={href} className="inline-flex items-center text-sm font-medium text-white hover:text-accent transition-colors py-2">
                         View Case Study
                         <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                     </Link>
@@ -111,7 +111,7 @@ export default function SelectedWork({ intro, featured, secondary }: SelectedWor
                 </Link>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 items-stretch">
+            <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-3 items-stretch">
                 {/* Featured card spans 2 columns on desktop */}
                 <div className="lg:col-span-2 space-y-4 animate-fade-in [animation-delay:200ms]">
                     <WorkCard {...featured} featured index={0} />
@@ -123,7 +123,7 @@ export default function SelectedWork({ intro, featured, secondary }: SelectedWor
                                 <Link
                                     key={s.href}
                                     href={s.href}
-                                    className="group flex items-center justify-between p-4 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/10 transition-all duration-300"
+                                    className="group flex items-center justify-between p-3 sm:p-4 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/10 transition-all duration-300"
                                 >
                                     <span className="text-sm text-foreground-secondary group-hover:text-white transition-colors">{s.title}</span>
                                     <span className="text-white/20 group-hover:text-accent text-xs transition-colors">↗</span>
