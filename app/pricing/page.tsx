@@ -57,7 +57,7 @@ export default function PricingPage() {
                 {/* Payment structure */}
                 <section className="mt-24 glass-card">
                     <h2 className="text-2xl font-semibold tracking-tight mb-6">Payment Structure</h2>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none">
                         {pricing.paymentStructure.map((p) => (
                             <li key={p} className="flex gap-4 items-center">
                                 <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />

@@ -34,7 +34,7 @@ export default function PayInvoicePage() {
                             {s.body ? <p className="mt-2 text-sm text-white/70">{s.body}</p> : null}
 
                             {s.bullets?.length ? (
-                                <ul className="mt-3 space-y-2 text-sm text-white/70">
+                                <ul className="mt-3 space-y-2 text-sm text-white/70 list-none">
                                     {s.bullets.map((b) => (
                                         <li key={b} className="flex gap-2">
                                             <span className="text-white/40">•</span>

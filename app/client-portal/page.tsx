@@ -68,16 +68,16 @@ export default function ClientPortalPage() {
                         {/* Option A: Informational section */}
                         <div className="text-left">
                             <h3 className="text-xs uppercase tracking-widest text-white/60 mb-2">Features</h3>
-                            <ul className="text-xs text-white/40 space-y-2">
-                                <li>• Live Project Roadmap</li>
-                                <li>• Deliverable Approvals</li>
+                            <ul className="text-xs text-white/40 space-y-2 list-none">
+                                <li className="flex gap-2 items-center"><span className="w-1 h-1 rounded-full bg-white/40 flex-shrink-0" />Live Project Roadmap</li>
+                                <li className="flex gap-2 items-center"><span className="w-1 h-1 rounded-full bg-white/40 flex-shrink-0" />Deliverable Approvals</li>
                             </ul>
                         </div>
                         <div className="text-left">
                             <h3 className="text-xs uppercase tracking-widest text-white/60 mb-2">Management</h3>
-                            <ul className="text-xs text-white/40 space-y-2">
-                                <li>• Unified Invoice Archive</li>
-                                <li>• Asset Management</li>
+                            <ul className="text-xs text-white/40 space-y-2 list-none">
+                                <li className="flex gap-2 items-center"><span className="w-1 h-1 rounded-full bg-white/40 flex-shrink-0" />Unified Invoice Archive</li>
+                                <li className="flex gap-2 items-center"><span className="w-1 h-1 rounded-full bg-white/40 flex-shrink-0" />Asset Management</li>
                             </ul>
                         </div>
                     </div>
