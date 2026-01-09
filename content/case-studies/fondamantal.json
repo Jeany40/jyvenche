@@ -73,19 +73,19 @@
     ],
     "gallery": [
         {
-            "src": "/case-studies/fondamantal/platform-overview.jpg",
-            "alt": "Fondamantal platform homepage",
-            "caption": "The unified platform experience bringing together music, albums, and broadcasts"
+            "src": "/gallery/fondamantal/homepage-hero.png",
+            "alt": "Fondamantal homepage featuring Ouvè Sèk La album release",
+            "caption": "Homepage hero showcasing the latest album release with brand philosophy"
         },
         {
-            "src": "/case-studies/fondamantal/music-library.jpg",
-            "alt": "Music Library interface",
-            "caption": "Custom streaming library with brand-consistent playback controls"
+            "src": "/gallery/fondamantal/about-page.png",
+            "alt": "Dèf Fondamantal About page with artist biography",
+            "caption": "About page featuring the artist's story and vision"
         },
         {
-            "src": "/case-studies/fondamantal/admin-dashboard.jpg",
-            "alt": "Admin Dashboard interface",
-            "caption": "Purpose-built content management for platform operations"
+            "src": "/gallery/fondamantal/discography.png",
+            "alt": "Complete discography page with album grid",
+            "caption": "Music library displaying the complete discography collection"
         }
     ],
     "testimonials": [
