@@ -15,7 +15,7 @@ import fondamantalAdminDashboard from '@/content/case-studies/fondamantal-admin-
 import fondamantalBroadcast from '@/content/case-studies/fondamantal-broadcast.json'
 
 // Re-export types for convenience
-export type { CaseStudy, CaseStudySection, CaseStudyCta, CaseStudyMeta, CaseStudyLinkMap } from '@/types/content'
+export type { CaseStudy, CaseStudyCta, CaseStudyMeta, CaseStudyLinkMap, CaseStudyGalleryItem, CaseStudyTestimonial } from '@/types/content'
 
 // Featured platform case study
 export const featuredCaseStudy: CaseStudy = fondamantal as CaseStudy

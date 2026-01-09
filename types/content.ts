@@ -46,6 +46,19 @@ export type CaseStudyCta = {
     href: string;
 };
 
+export type CaseStudyGalleryItem = {
+    src: string;
+    alt: string;
+    caption?: string;
+};
+
+export type CaseStudyTestimonial = {
+    quote: string;
+    name: string;
+    role: string;
+    project: string;
+};
+
 export type CaseStudy = {
     slug: string;
     title: string;
@@ -54,7 +67,15 @@ export type CaseStudy = {
     links?: CaseStudyLinkMap;
     meta?: CaseStudyMeta;
     platformBreakdown?: Array<{ title: string; href: string }>;
-    sections: CaseStudySection[];
+    // New flat structure
+    overview: string;
+    problem: string;
+    approach: string[];
+    keyFeatures: string[];
+    technicalNotes: string[];
+    outcomes: string[];
+    gallery?: CaseStudyGalleryItem[];
+    testimonials?: CaseStudyTestimonial[];
     cta: CaseStudyCta;
 };
 

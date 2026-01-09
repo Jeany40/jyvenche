@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Container from '@/components/layout/Container'
 import CaseStudyHeader from '@/components/sections/CaseStudyHeader'
 import FinalCTA from '@/components/sections/FinalCTA'
-import { getCaseStudyBySlug, allCaseStudies, type CaseStudySection } from '@/lib/caseStudies'
+import { getCaseStudyBySlug, allCaseStudies } from '@/lib/caseStudies'
 
 /**
  * Generate static params for all case studies.
@@ -37,120 +37,127 @@ export async function generateMetadata({
 }
 
 /**
- * Section Renderer - renders different section types from JSON
+ * Section component for text content
  */
-function renderSection(section: CaseStudySection, index: number) {
-    // Simple alternation or standard styling
-    const isEven = index % 2 === 0
+function TextSection({ title, body }: { title: string; body: string }) {
+    return (
+        <section className="py-12 border-t border-white/10">
+            <div className="max-w-3xl">
+                <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
+                    {title}
+                </h2>
+                <p className="text-white/70 leading-relaxed text-lg whitespace-pre-line">
+                    {body}
+                </p>
+            </div>
+        </section>
+    )
+}
 
-    switch (section.type) {
-        case 'outcome':
-            return (
-                <section key={index} className="py-12 border-t border-white/10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <div>
-                            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
-                                {section.title}
-                            </h2>
-                            <p className="text-white/70 leading-relaxed text-lg whitespace-pre-line">
-                                {section.body}
-                            </p>
-
-                            {/* Optional Stat */}
-                            {section.stat && (
-                                <div className="mt-8 pt-8 border-t border-white/10">
-                                    <div className="text-4xl font-serif text-accent mb-2">
-                                        {section.stat.value}
-                                    </div>
-                                    <div className="text-sm text-white/50 uppercase tracking-wider">
-                                        {section.stat.label}
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-
-                        {/* Optional Quote */}
-                        {section.quote && (
-                            <div className="bg-white/[0.03] p-8 rounded-2xl border border-white/10 relative mt-4 lg:mt-0">
-                                <span className="absolute -top-4 -left-2 text-6xl text-accent/20 font-serif">“</span>
-                                <blockquote className="relative z-10 text-xl font-serif leading-relaxed text-white/90">
-                                    {section.quote}
-                                </blockquote>
-                                <div className="mt-6 flex items-center gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent text-xs font-bold">
-                                        FD
-                                    </div>
-                                    <div className="text-xs uppercase tracking-wider text-white/50">
-                                        Fondamantal
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </section>
-            )
-
-        case 'overview':
-        case 'problem':
-        case 'solution':
-        case 'takeaway':
-            return (
-                <section key={index} className="py-12 border-t border-white/10">
-                    <div className="max-w-3xl">
-                        <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
-                            {section.title}
-                        </h2>
-                        <p className="text-white/70 leading-relaxed text-lg whitespace-pre-line">
-                            {section.body}
+/**
+ * Section component for bullet lists
+ */
+function BulletSection({ title, bullets }: { title: string; bullets: string[] }) {
+    return (
+        <section className="py-12 border-t border-white/10">
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-8">
+                {title}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {bullets.map((bullet, i) => (
+                    <div key={i} className="flex items-start gap-4 group">
+                        <span className="flex-shrink-0 w-10 h-10 rounded-full border border-accent/20 bg-accent/5 flex items-center justify-center text-sm font-semibold text-accent/70 group-hover:text-accent group-hover:border-accent/40 transition-colors">
+                            {String(i + 1).padStart(2, '0')}
+                        </span>
+                        <p className="text-white/70 text-sm leading-relaxed pt-2">
+                            {bullet}
                         </p>
                     </div>
-                </section>
-            )
+                ))}
+            </div>
+        </section>
+    )
+}
 
-        case 'features':
-            return (
-                <section key={index} className="py-12 border-t border-white/10">
-                    <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-8">
-                        {section.title}
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {section.bullets?.map((bullet, i) => (
-                            <div key={i} className="flex items-start gap-4 group">
-                                <span className="flex-shrink-0 w-10 h-10 rounded-full border border-accent/20 bg-accent/5 flex items-center justify-center text-sm font-semibold text-accent/70 group-hover:text-accent group-hover:border-accent/40 transition-colors">
-                                    {String(i + 1).padStart(2, '0')}
-                                </span>
-                                <p className="text-white/70 text-sm leading-relaxed pt-2">
-                                    {bullet}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            )
+/**
+ * Section for approach (simpler list)
+ */
+function ApproachSection({ bullets }: { bullets: string[] }) {
+    return (
+        <section className="py-12 border-t border-white/10">
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-8">
+                Approach
+            </h2>
+            <ul className="space-y-4 max-w-3xl">
+                {bullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                        <span className="text-accent/60 mt-1">→</span>
+                        <span className="text-white/70 leading-relaxed">{bullet}</span>
+                    </li>
+                ))}
+            </ul>
+        </section>
+    )
+}
 
-        case 'stack':
-            return (
-                <section key={index} className="py-12 border-t border-white/10">
-                    <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-8">
-                        {section.title}
-                    </h2>
-                    <div className="flex flex-wrap gap-3">
-                        {section.bullets?.map((tech) => (
-                            <span
-                                key={tech}
-                                className="px-4 py-2 rounded-lg border border-white/10 text-white/70 text-sm"
-                            >
-                                {tech}
-                            </span>
-                        ))}
-                    </div>
-                </section>
-            )
+/**
+ * Section for technical notes (tag style)
+ */
+function TechnicalNotesSection({ bullets }: { bullets: string[] }) {
+    return (
+        <section className="py-12 border-t border-white/10">
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-8">
+                Technical Notes
+            </h2>
+            <div className="flex flex-wrap gap-3">
+                {bullets.map((tech) => (
+                    <span
+                        key={tech}
+                        className="px-4 py-2 rounded-lg border border-white/10 text-white/70 text-sm"
+                    >
+                        {tech}
+                    </span>
+                ))}
+            </div>
+        </section>
+    )
+}
 
-        case 'image':
-            return (
-                <section key={index} className="py-12 border-t border-white/10">
-                    <figure className="max-w-5xl mx-auto">
+/**
+ * Section for outcomes
+ */
+function OutcomesSection({ bullets }: { bullets: string[] }) {
+    return (
+        <section className="py-12 border-t border-white/10">
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-8">
+                Outcomes
+            </h2>
+            <ul className="space-y-4 max-w-3xl">
+                {bullets.map((outcome, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                        <span className="text-accent mt-1">✓</span>
+                        <span className="text-white/70 leading-relaxed">{outcome}</span>
+                    </li>
+                ))}
+            </ul>
+        </section>
+    )
+}
+
+/**
+ * Gallery section
+ */
+function GallerySection({ items }: { items: Array<{ src: string; alt: string; caption?: string }> }) {
+    if (!items || items.length === 0) return null
+
+    return (
+        <section className="py-12 border-t border-white/10">
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-8">
+                Gallery
+            </h2>
+            <div className="space-y-8">
+                {items.map((item, i) => (
+                    <figure key={i} className="max-w-5xl">
                         <div className="rounded-xl border border-white/10 bg-black/50 overflow-hidden shadow-2xl">
                             {/* Browser Header */}
                             <div className="h-8 bg-white/5 border-b border-white/5 flex items-center px-4 gap-2">
@@ -159,27 +166,21 @@ function renderSection(section: CaseStudySection, index: number) {
                                 <div className="w-2.5 h-2.5 rounded-full bg-green-500/20" />
                             </div>
                             {/* Image Container */}
-                            <div className="relative aspect-video bg-white/5">
-                                {/* Using standard img tag for now until generic Image component is set up or placeholder strategy confirmed */}
-                                <img
-                                    src={section.src}
-                                    alt={section.alt}
-                                    className="w-full h-full object-cover"
-                                />
+                            <div className="relative aspect-video bg-white/5 flex items-center justify-center">
+                                {/* Placeholder for screenshot */}
+                                <div className="text-white/30 text-sm">[Screenshot: {item.alt}]</div>
                             </div>
                         </div>
-                        {section.caption && (
-                            <figcaption className="mt-4 text-center text-sm text-white/40 italic">
-                                {section.caption}
+                        {item.caption && (
+                            <figcaption className="mt-4 text-sm text-white/40 italic">
+                                {item.caption}
                             </figcaption>
                         )}
                     </figure>
-                </section>
-            )
-
-        default:
-            return null
-    }
+                ))}
+            </div>
+        </section>
+    )
 }
 
 export default async function CaseStudyPage({
@@ -227,8 +228,7 @@ export default async function CaseStudyPage({
                             <div className="text-sm text-white/80">{caseStudy.meta.role?.join(', ')}</div>
                         </div>
                         <div>
-                            <div className="text-xs uppercase tracking-wider text-white/40 mb-2">Timeline</div>
-                            {/* Assuming timeline might be added later, currently mostly status or just reusing role/status */}
+                            <div className="text-xs uppercase tracking-wider text-white/40 mb-2">Status</div>
                             <div className="text-sm text-white/80">{caseStudy.meta.status}</div>
                         </div>
                     </div>
@@ -257,9 +257,28 @@ export default async function CaseStudyPage({
                     </section>
                 )}
 
-                {/* Content Sections */}
+                {/* Content Sections - New Flat Structure */}
                 <div className="mt-8">
-                    {caseStudy.sections.map((section, index) => renderSection(section, index))}
+                    {/* Overview */}
+                    <TextSection title="Overview" body={caseStudy.overview} />
+
+                    {/* Problem */}
+                    <TextSection title="The Problem" body={caseStudy.problem} />
+
+                    {/* Approach */}
+                    <ApproachSection bullets={caseStudy.approach} />
+
+                    {/* Key Features */}
+                    <BulletSection title="Key Features" bullets={caseStudy.keyFeatures} />
+
+                    {/* Technical Notes */}
+                    <TechnicalNotesSection bullets={caseStudy.technicalNotes} />
+
+                    {/* Outcomes */}
+                    <OutcomesSection bullets={caseStudy.outcomes} />
+
+                    {/* Gallery */}
+                    {caseStudy.gallery && <GallerySection items={caseStudy.gallery} />}
                 </div>
 
                 {/* Final CTA */}
