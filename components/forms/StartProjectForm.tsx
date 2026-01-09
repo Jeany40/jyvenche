@@ -130,280 +130,305 @@ export default function StartProjectForm({ successHeadline, successBody }: Start
 
     return (
         <form onSubmit={handleSubmit} className="glass-card">
-            {/* Honeypot field - hidden from users, visible to bots */}
-            <div
-                className="absolute left-[-9999px] opacity-0 pointer-events-none"
-                aria-hidden="true"
-            >
-                <label htmlFor="companyWebsite">Company Website</label>
-                <input
-                    id="companyWebsite"
-                    name="companyWebsite"
-                    value={data.companyWebsite}
-                    onChange={handleChange}
-                    autoComplete="off"
-                    tabIndex={-1}
-                />
-            </div>
+            {/* Contact Section */}
+            <div>
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2">
+                    01. Contact Details
+                </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="sm:col-span-1">
-                    <label htmlFor="fullName" className="input-label">Full Name *</label>
-                    <input
-                        id="fullName"
-                        name="fullName"
-                        value={data.fullName}
-                        onChange={handleChange}
-                        className="input-field"
-                        placeholder="Your name"
-                        autoComplete="name"
-                        aria-required="true"
-                        aria-invalid={!!errors.fullName}
-                        aria-describedby={errors.fullName ? "fullName-error" : undefined}
-                    />
-                    {errors.fullName ? (
-                        <p id="fullName-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                            {errors.fullName}
-                        </p>
-                    ) : null}
-                </div>
-
-                <div className="sm:col-span-1">
-                    <label htmlFor="email" className="input-label">Email *</label>
-                    <input
-                        id="email"
-                        name="email"
-                        value={data.email}
-                        onChange={handleChange}
-                        className="input-field"
-                        placeholder="you@email.com"
-                        autoComplete="email"
-                        aria-required="true"
-                        aria-invalid={!!errors.email}
-                        aria-describedby={errors.email ? "email-error" : undefined}
-                    />
-                    {errors.email ? (
-                        <p id="email-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                            {errors.email}
-                        </p>
-                    ) : null}
-                </div>
-
-                <div className="sm:col-span-1">
-                    <label htmlFor="company" className="input-label">Company / Brand</label>
-                    <input
-                        id="company"
-                        name="company"
-                        value={data.company}
-                        onChange={handleChange}
-                        className="input-field"
-                        placeholder="Optional"
-                        autoComplete="organization"
-                    />
-                </div>
-
-                <div className="sm:col-span-1">
-                    <label htmlFor="website" className="input-label">Current Website</label>
-                    <input
-                        id="website"
-                        name="website"
-                        value={data.website}
-                        onChange={handleChange}
-                        className="input-field"
-                        placeholder="Optional"
-                        autoComplete="url"
-                    />
-                </div>
-            </div>
-
-            <div className="mt-8">
-                <label htmlFor="projectType" className="input-label">Project Type *</label>
-                <select
-                    id="projectType"
-                    name="projectType"
-                    value={data.projectType}
-                    onChange={handleChange}
-                    className="input-field appearance-none"
-                    aria-required="true"
-                    aria-invalid={!!errors.projectType}
-                    aria-describedby={errors.projectType ? "projectType-error" : undefined}
+                {/* Honeypot field - hidden from users, visible to bots */}
+                <div
+                    className="absolute left-[-9999px] opacity-0 pointer-events-none"
+                    aria-hidden="true"
                 >
-                    <option value="" className="bg-background">Select one</option>
-                    {projectTypeOptions.map((opt) => (
-                        <option key={opt} value={opt} className="bg-background">
-                            {opt}
-                        </option>
-                    ))}
-                </select>
-                {errors.projectType ? (
-                    <p id="projectType-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                        {errors.projectType}
-                    </p>
-                ) : null}
-
-                <div className="mt-6">
-                    <label htmlFor="projectDescription" className="input-label">Project Description *</label>
-                    <textarea
-                        id="projectDescription"
-                        name="projectDescription"
-                        value={data.projectDescription}
+                    <label htmlFor="companyWebsite">Company Website</label>
+                    <input
+                        id="companyWebsite"
+                        name="companyWebsite"
+                        value={data.companyWebsite}
                         onChange={handleChange}
-                        className="input-field min-h-[120px]"
-                        placeholder="What are you building, and what problem does it solve?"
-                        aria-required="true"
-                        aria-invalid={!!errors.projectDescription}
-                        aria-describedby={errors.projectDescription ? "projectDescription-error" : undefined}
+                        autoComplete="off"
+                        tabIndex={-1}
                     />
-                    {errors.projectDescription ? (
-                        <p id="projectDescription-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                            {errors.projectDescription}
-                        </p>
-                    ) : null}
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="sm:col-span-1">
+                        <label htmlFor="fullName" className="input-label">Full Name *</label>
+                        <input
+                            id="fullName"
+                            name="fullName"
+                            value={data.fullName}
+                            onChange={handleChange}
+                            className="input-field"
+                            placeholder="Your name"
+                            autoComplete="name"
+                            aria-required="true"
+                            aria-invalid={!!errors.fullName}
+                            aria-describedby={errors.fullName ? "fullName-error" : undefined}
+                        />
+                        {errors.fullName ? (
+                            <p id="fullName-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                                {errors.fullName}
+                            </p>
+                        ) : null}
+                    </div>
+
+                    <div className="sm:col-span-1">
+                        <label htmlFor="email" className="input-label">Email *</label>
+                        <input
+                            id="email"
+                            name="email"
+                            value={data.email}
+                            onChange={handleChange}
+                            className="input-field"
+                            placeholder="you@email.com"
+                            autoComplete="email"
+                            aria-required="true"
+                            aria-invalid={!!errors.email}
+                            aria-describedby={errors.email ? "email-error" : undefined}
+                        />
+                        {errors.email ? (
+                            <p id="email-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                                {errors.email}
+                            </p>
+                        ) : null}
+                    </div>
+
+                    <div className="sm:col-span-1">
+                        <label htmlFor="company" className="input-label">Company / Brand</label>
+                        <input
+                            id="company"
+                            name="company"
+                            value={data.company}
+                            onChange={handleChange}
+                            className="input-field"
+                            placeholder="Optional"
+                            autoComplete="organization"
+                        />
+                    </div>
+
+                    <div className="sm:col-span-1">
+                        <label htmlFor="website" className="input-label">Current Website</label>
+                        <input
+                            id="website"
+                            name="website"
+                            value={data.website}
+                            onChange={handleChange}
+                            className="input-field"
+                            placeholder="Optional"
+                            autoComplete="url"
+                        />
+                    </div>
                 </div>
             </div>
 
-            <div className="mt-8">
-                <div className="input-label mb-3">Primary Goals</div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {primaryGoalOptions.map((goal) => {
-                        const checked = data.primaryGoals.includes(goal);
-                        return (
-                            <button
-                                key={goal}
-                                type="button"
-                                onClick={() => toggleGoal(goal)}
-                                className={`text-left rounded-xl px-4 py-3 text-sm transition-all duration-300 border ${checked
-                                    ? "bg-accent/10 border-accent text-white shadow-[0_0_15px_rgba(201,169,98,0.15)]"
-                                    : "bg-white/[0.02] border-white/10 text-white/60 hover:border-white/20 hover:text-white"
-                                    }`}
-                            >
-                                {goal}
-                            </button>
-                        );
-                    })}
+            {/* Project Section */}
+            <div className="mt-12">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2">
+                    02. Project Overview
+                </h3>
+
+                <div>
+                    <label htmlFor="projectType" className="input-label">Project Type *</label>
+                    <select
+                        id="projectType"
+                        name="projectType"
+                        value={data.projectType}
+                        onChange={handleChange}
+                        className="input-field appearance-none"
+                        aria-required="true"
+                        aria-invalid={!!errors.projectType}
+                        aria-describedby={errors.projectType ? "projectType-error" : undefined}
+                    >
+                        <option value="" className="bg-background">Select one</option>
+                        {projectTypeOptions.map((opt) => (
+                            <option key={opt} value={opt} className="bg-background">
+                                {opt}
+                            </option>
+                        ))}
+                    </select>
+                    {errors.projectType ? (
+                        <p id="projectType-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                            {errors.projectType}
+                        </p>
+                    ) : null}
+
+                    <div className="mt-6">
+                        <div className="flex justify-between items-baseline mb-2">
+                            <label htmlFor="projectDescription" className="input-label mb-0">Project Description *</label>
+                            <span className="text-xs text-white/40">2-3 sentences recommended</span>
+                        </div>
+                        <textarea
+                            id="projectDescription"
+                            name="projectDescription"
+                            value={data.projectDescription}
+                            onChange={handleChange}
+                            className="input-field min-h-[120px]"
+                            placeholder="What are you building? Mention your industry, main goals, and the problem you're solving."
+                            aria-required="true"
+                            aria-invalid={!!errors.projectDescription}
+                            aria-describedby={errors.projectDescription ? "projectDescription-error" : undefined}
+                        />
+                        {errors.projectDescription ? (
+                            <p id="projectDescription-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                                {errors.projectDescription}
+                            </p>
+                        ) : null}
+                    </div>
+                </div>
+
+                <div className="mt-8">
+                    <div className="input-label mb-3">Primary Goals</div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {primaryGoalOptions.map((goal) => {
+                            const checked = data.primaryGoals.includes(goal);
+                            return (
+                                <button
+                                    key={goal}
+                                    type="button"
+                                    onClick={() => toggleGoal(goal)}
+                                    className={`text-left rounded-xl px-4 py-3 text-sm transition-all duration-300 border ${checked
+                                        ? "bg-accent/10 border-accent text-white shadow-[0_0_15px_rgba(201,169,98,0.15)]"
+                                        : "bg-white/[0.02] border-white/10 text-white/60 hover:border-white/20 hover:text-white"
+                                        }`}
+                                >
+                                    {goal}
+                                </button>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                    <label htmlFor="scopeSize" className="input-label">Scope Size *</label>
-                    <select
-                        id="scopeSize"
-                        name="scopeSize"
-                        value={data.scopeSize}
-                        onChange={handleChange}
-                        className="input-field appearance-none"
-                        aria-required="true"
-                        aria-invalid={!!errors.scopeSize}
-                        aria-describedby={errors.scopeSize ? "scopeSize-error" : undefined}
-                    >
-                        <option value="" className="bg-background">Select one</option>
-                        <option value="Small" className="bg-background">Small (1–4 pages)</option>
-                        <option value="Medium" className="bg-background">Medium (5–10 pages)</option>
-                        <option value="Large" className="bg-background">Large (platform)</option>
-                        <option value="Not sure" className="bg-background">Not sure</option>
-                    </select>
-                    {errors.scopeSize ? (
-                        <p id="scopeSize-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                            {errors.scopeSize}
-                        </p>
-                    ) : null}
-                </div>
+            {/* Logistics Section */}
+            <div className="mt-12">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-white/50 mb-6 border-b border-white/10 pb-2">
+                    03. Logistics
+                </h3>
 
-                <div>
-                    <label htmlFor="budgetRange" className="input-label">Budget Range *</label>
-                    <select
-                        id="budgetRange"
-                        name="budgetRange"
-                        value={data.budgetRange}
-                        onChange={handleChange}
-                        className="input-field appearance-none"
-                        aria-required="true"
-                        aria-invalid={!!errors.budgetRange}
-                        aria-describedby={errors.budgetRange ? "budgetRange-error" : undefined}
-                    >
-                        <option value="" className="bg-background">Select one</option>
-                        <option value="$1,500 – $3,500" className="bg-background">$1,500 – $3,500</option>
-                        <option value="$3,500 – $7,500" className="bg-background">$3,500 – $7,500</option>
-                        <option value="$7,500 – $15,000" className="bg-background">$7,500 – $15,000</option>
-                        <option value="$15,000+" className="bg-background">$15,000+</option>
-                        <option value="Not sure yet" className="bg-background">Not sure yet</option>
-                    </select>
-                    {errors.budgetRange ? (
-                        <p id="budgetRange-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                            {errors.budgetRange}
-                        </p>
-                    ) : null}
-                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label htmlFor="scopeSize" className="input-label">Scope Size *</label>
+                        <select
+                            id="scopeSize"
+                            name="scopeSize"
+                            value={data.scopeSize}
+                            onChange={handleChange}
+                            className="input-field appearance-none"
+                            aria-required="true"
+                            aria-invalid={!!errors.scopeSize}
+                            aria-describedby={errors.scopeSize ? "scopeSize-error" : undefined}
+                        >
+                            <option value="" className="bg-background">Select one</option>
+                            <option value="Small" className="bg-background">Small (1–4 pages)</option>
+                            <option value="Medium" className="bg-background">Medium (5–10 pages)</option>
+                            <option value="Large" className="bg-background">Large (platform)</option>
+                            <option value="Not sure" className="bg-background">Not sure</option>
+                        </select>
+                        {errors.scopeSize ? (
+                            <p id="scopeSize-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                                {errors.scopeSize}
+                            </p>
+                        ) : null}
+                    </div>
 
-                <div>
-                    <label htmlFor="timeline" className="input-label">Timeline *</label>
-                    <select
-                        id="timeline"
-                        name="timeline"
-                        value={data.timeline}
-                        onChange={handleChange}
-                        className="input-field appearance-none"
-                        aria-required="true"
-                        aria-invalid={!!errors.timeline}
-                        aria-describedby={errors.timeline ? "timeline-error" : undefined}
-                    >
-                        <option value="" className="bg-background">Select one</option>
-                        <option value="2–4 weeks" className="bg-background">2–4 weeks</option>
-                        <option value="1–2 months" className="bg-background">1–2 months</option>
-                        <option value="2–3 months" className="bg-background">2–3 months</option>
-                        <option value="Flexible" className="bg-background">Flexible</option>
-                    </select>
-                    {errors.timeline ? (
-                        <p id="timeline-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                            {errors.timeline}
-                        </p>
-                    ) : null}
-                </div>
+                    <div>
+                        <label htmlFor="budgetRange" className="input-label">Budget Range *</label>
+                        <select
+                            id="budgetRange"
+                            name="budgetRange"
+                            value={data.budgetRange}
+                            onChange={handleChange}
+                            className="input-field appearance-none"
+                            aria-required="true"
+                            aria-invalid={!!errors.budgetRange}
+                            aria-describedby={errors.budgetRange ? "budgetRange-error" : undefined}
+                        >
+                            <option value="" className="bg-background">Select one</option>
+                            <option value="$1,500 – $3,500" className="bg-background">$1,500 – $3,500</option>
+                            <option value="$3,500 – $7,500" className="bg-background">$3,500 – $7,500</option>
+                            <option value="$7,500 – $15,000" className="bg-background">$7,500 – $15,000</option>
+                            <option value="$15,000+" className="bg-background">$15,000+</option>
+                            <option value="Not sure yet" className="bg-background">Not sure yet</option>
+                        </select>
+                        {errors.budgetRange ? (
+                            <p id="budgetRange-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                                {errors.budgetRange}
+                            </p>
+                        ) : null}
+                    </div>
 
-                <div>
-                    <label htmlFor="decisionReadiness" className="input-label">Decision Readiness *</label>
-                    <select
-                        id="decisionReadiness"
-                        name="decisionReadiness"
-                        value={data.decisionReadiness}
-                        onChange={handleChange}
-                        className="input-field appearance-none"
-                        aria-required="true"
-                        aria-invalid={!!errors.decisionReadiness}
-                        aria-describedby={errors.decisionReadiness ? "decisionReadiness-error" : undefined}
-                    >
-                        <option value="" className="bg-background">Select one</option>
-                        <option value="Ready to start" className="bg-background">Ready to start</option>
-                        <option value="Within 1 month" className="bg-background">Within 1 month</option>
-                        <option value="Exploring options" className="bg-background">Exploring options</option>
-                    </select>
-                    {errors.decisionReadiness ? (
-                        <p id="decisionReadiness-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
-                            {errors.decisionReadiness}
-                        </p>
-                    ) : null}
+                    <div>
+                        <label htmlFor="timeline" className="input-label">Timeline *</label>
+                        <select
+                            id="timeline"
+                            name="timeline"
+                            value={data.timeline}
+                            onChange={handleChange}
+                            className="input-field appearance-none"
+                            aria-required="true"
+                            aria-invalid={!!errors.timeline}
+                            aria-describedby={errors.timeline ? "timeline-error" : undefined}
+                        >
+                            <option value="" className="bg-background">Select one</option>
+                            <option value="2–4 weeks" className="bg-background">2–4 weeks</option>
+                            <option value="1–2 months" className="bg-background">1–2 months</option>
+                            <option value="2–3 months" className="bg-background">2–3 months</option>
+                            <option value="Flexible" className="bg-background">Flexible</option>
+                        </select>
+                        {errors.timeline ? (
+                            <p id="timeline-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                                {errors.timeline}
+                            </p>
+                        ) : null}
+                    </div>
+
+                    <div>
+                        <label htmlFor="decisionReadiness" className="input-label">Decision Readiness *</label>
+                        <select
+                            id="decisionReadiness"
+                            name="decisionReadiness"
+                            value={data.decisionReadiness}
+                            onChange={handleChange}
+                            className="input-field appearance-none"
+                            aria-required="true"
+                            aria-invalid={!!errors.decisionReadiness}
+                            aria-describedby={errors.decisionReadiness ? "decisionReadiness-error" : undefined}
+                        >
+                            <option value="" className="bg-background">Select one</option>
+                            <option value="Ready to start" className="bg-background">Ready to start</option>
+                            <option value="Within 1 month" className="bg-background">Within 1 month</option>
+                            <option value="Exploring options" className="bg-background">Exploring options</option>
+                        </select>
+                        {errors.decisionReadiness ? (
+                            <p id="decisionReadiness-error" className="mt-2 text-xs text-red-400/90 font-medium animate-fade-in" role="alert">
+                                {errors.decisionReadiness}
+                            </p>
+                        ) : null}
+                    </div>
                 </div>
             </div>
 
             {globalError ? (
-                <div className="mt-6 rounded-xl border border-red-500/30 bg-red-500/5 p-4 text-sm text-red-400/90 font-medium animate-fade-in flex items-center gap-3">
+                <div className="mt-8 rounded-xl border border-red-500/30 bg-red-500/5 p-4 text-sm text-red-400/90 font-medium animate-fade-in flex items-center gap-3">
                     <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
                     {globalError}
                 </div>
             ) : null}
 
-            <button
-                type="submit"
-                disabled={isSubmitting}
-                className="mt-10 w-full btn-primary"
-            >
-                {isSubmitting ? "Submitting..." : "Request Project Review"}
-            </button>
-
-            <p className="mt-4 text-xs text-center text-white/40">
-                You’ll receive a response within 1–2 business days.
-            </p>
+            <div className="mt-10 border-t border-white/10 pt-8">
+                <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full btn-primary"
+                >
+                    {isSubmitting ? "Submitting..." : "Request Project Review"}
+                </button>
+                <p className="mt-4 text-xs text-center text-white/40">
+                    If accepted, you’ll receive a proposal + invoice + agreement within 24 hours.
+                </p>
+            </div>
         </form>
     );
 }

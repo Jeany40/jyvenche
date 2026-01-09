@@ -44,10 +44,55 @@ function renderSection(section: CaseStudySection, index: number) {
     const isEven = index % 2 === 0
 
     switch (section.type) {
+        case 'outcome':
+            return (
+                <section key={index} className="py-12 border-t border-white/10">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                        <div>
+                            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
+                                {section.title}
+                            </h2>
+                            <p className="text-white/70 leading-relaxed text-lg whitespace-pre-line">
+                                {section.body}
+                            </p>
+
+                            {/* Optional Stat */}
+                            {section.stat && (
+                                <div className="mt-8 pt-8 border-t border-white/10">
+                                    <div className="text-4xl font-serif text-accent mb-2">
+                                        {section.stat.value}
+                                    </div>
+                                    <div className="text-sm text-white/50 uppercase tracking-wider">
+                                        {section.stat.label}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Optional Quote */}
+                        {section.quote && (
+                            <div className="bg-white/[0.03] p-8 rounded-2xl border border-white/10 relative mt-4 lg:mt-0">
+                                <span className="absolute -top-4 -left-2 text-6xl text-accent/20 font-serif">“</span>
+                                <blockquote className="relative z-10 text-xl font-serif leading-relaxed text-white/90">
+                                    {section.quote}
+                                </blockquote>
+                                <div className="mt-6 flex items-center gap-3">
+                                    <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent text-xs font-bold">
+                                        FD
+                                    </div>
+                                    <div className="text-xs uppercase tracking-wider text-white/50">
+                                        Fondamantal
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </section>
+            )
+
         case 'overview':
         case 'problem':
         case 'solution':
-        case 'outcome':
         case 'takeaway':
             return (
                 <section key={index} className="py-12 border-t border-white/10">

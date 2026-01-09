@@ -71,7 +71,12 @@
         {
             "type": "outcome",
             "title": "Outcome",
-            "body": "A centralized platform that supports releases, audience engagement, and internal workflows—positioned for future monetization and expansion."
+            "body": "A centralized platform that supports releases, audience engagement, and internal workflows—positioned for future monetization and expansion.",
+            "stat": {
+                "value": "4h → 30m",
+                "label": "Content publishing workflow reduction"
+            },
+            "quote": "A unified platform that finally gives us full control over our content ecosystem."
         },
         {
             "type": "takeaway",

@@ -93,6 +93,22 @@ export default function StartProjectPage() {
                                 ))}
                             </ul>
                         </section>
+
+                        {/* Direct Contact */}
+                        <section className="pt-8 border-t border-white/10">
+                            <h2 className="text-sm font-semibold tracking-tight text-white/50 uppercase mb-4">Prefer email?</h2>
+                            <a href="mailto:hello@jyvenche.com" className="group flex items-center gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5 hover:border-white/20">
+                                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
+                                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div className="text-sm font-medium text-white">hello@jyvenche.com</div>
+                                    <div className="text-xs text-white/50">Direct response</div>
+                                </div>
+                            </a>
+                        </section>
                     </aside>
 
                     {/* Right: form + helper copy */}
