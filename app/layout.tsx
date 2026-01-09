@@ -11,6 +11,7 @@ import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { Analytics } from '@vercel/analytics/react'
+import { OrganizationSchema, WebsiteSchema } from '@/components/seo/JsonLd'
 
 // Initialize Inter font with Latin subset
 const inter = Inter({
@@ -88,6 +89,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={inter.variable}>
+            <head>
+                <OrganizationSchema />
+                <WebsiteSchema />
+            </head>
             <body className="min-h-screen flex flex-col bg-background text-foreground antialiased" suppressHydrationWarning>
                 {/* Navigation header */}
                 <Navbar
