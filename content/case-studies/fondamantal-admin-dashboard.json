@@ -1,0 +1,71 @@
+{
+    "slug": "fondamantal-admin-dashboard",
+    "title": "Fondamantal — Admin Dashboard",
+    "label": "Internal Tooling / Content Management",
+    "summary": "A purpose-built internal control center for managing content and publishing workflows without touching code.",
+    "links": {
+        "live": "https://www.fondamantal.com/admin"
+    },
+    "meta": {
+        "role": [
+            "UX Structure",
+            "Frontend Development",
+            "System Design"
+        ],
+        "status": "Live",
+        "partOf": "Fondamantal Platform"
+    },
+    "sections": [
+        {
+            "type": "overview",
+            "title": "Overview",
+            "body": "The Admin Dashboard is the internal control center for the Fondamantal platform—tailored to platform structure and real workflows."
+        },
+        {
+            "type": "problem",
+            "title": "The Problem",
+            "body": "Manual updates and generic CMS tools create inefficiency, workflow mismatch, and higher risk of errors during publishing."
+        },
+        {
+            "type": "solution",
+            "title": "The Solution",
+            "body": "A custom admin interface focused on content separation, predictable publishing paths, minimal UI complexity, and platform-specific controls."
+        },
+        {
+            "type": "features",
+            "title": "Key Features",
+            "bullets": [
+                "Purpose-built controls aligned with platform needs",
+                "Clear publishing workflow to reduce mistakes",
+                "Foundation for controlled access and roles",
+                "Clean, distraction-free interface",
+                "Scalable base for analytics/scheduling later"
+            ]
+        },
+        {
+            "type": "stack",
+            "title": "Technology Stack",
+            "bullets": [
+                "React / Next.js",
+                "Component-based admin UI",
+                "Structured layout system"
+            ]
+        },
+        {
+            "type": "outcome",
+            "title": "Outcome",
+            "body": "Reduced operational overhead and improved independence—content can be managed confidently without developer intervention."
+        },
+        {
+            "type": "takeaway",
+            "title": "Key Takeaway",
+            "body": "Custom internal tools improve operational efficiency when designed around real workflows."
+        }
+    ],
+    "cta": {
+        "headline": "Need internal tools built for your workflow?",
+        "body": "If your project requires dashboards or admin panels tailored to real operations, I'd be happy to review it.",
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

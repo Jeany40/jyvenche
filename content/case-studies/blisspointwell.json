@@ -1,0 +1,70 @@
+{
+    "slug": "blisspointwell",
+    "title": "BlissPointWell",
+    "label": "Healthcare Private Practice Website",
+    "summary": "A calm, trust-forward healthcare website designed to support patient confidence and clear service navigation.",
+    "links": {
+        "live": "https://www.blisspointwell.com"
+    },
+    "meta": {
+        "role": [
+            "Design",
+            "Frontend Development",
+            "Structure"
+        ],
+        "status": "Live"
+    },
+    "sections": [
+        {
+            "type": "overview",
+            "title": "Overview",
+            "body": "BlissPointWell is a private mental health practice website designed to establish trust, clarity, and professionalism for prospective patients. The site prioritizes simplicity, accessibility, and a reassuring tone."
+        },
+        {
+            "type": "problem",
+            "title": "The Problem",
+            "body": "Healthcare websites often suffer from unclear hierarchy, cluttered layouts, and weak mobile usability—issues that reduce confidence and credibility in sensitive contexts."
+        },
+        {
+            "type": "solution",
+            "title": "The Solution",
+            "body": "A clean, minimal system focused on information hierarchy, calm visual rhythm, predictable navigation, and mobile-first responsiveness—removing friction rather than adding features."
+        },
+        {
+            "type": "features",
+            "title": "Key Features",
+            "bullets": [
+                "Trust-forward design system with restrained typography and spacing",
+                "Clear service presentation in plain language",
+                "Mobile-first, responsive layout",
+                "Performance-conscious frontend structure",
+                "Accessibility-aware layout and navigation"
+            ]
+        },
+        {
+            "type": "stack",
+            "title": "Technology Stack",
+            "bullets": [
+                "React / Next.js",
+                "Component-based UI architecture",
+                "Modern styling system"
+            ]
+        },
+        {
+            "type": "outcome",
+            "title": "Outcome",
+            "body": "A composed, professional healthcare website that supports patient confidence and serves as a stable foundation for future growth."
+        },
+        {
+            "type": "takeaway",
+            "title": "Key Takeaway",
+            "body": "Clarity and restraint outperform complexity in trust-sensitive environments."
+        }
+    ],
+    "cta": {
+        "headline": "Interested in a similar project?",
+        "body": "If you're building a healthcare or service website that needs to feel calm and credible, I'd be happy to review your project.",
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

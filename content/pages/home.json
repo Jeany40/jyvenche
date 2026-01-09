@@ -1,0 +1,100 @@
+{
+    "hero": {
+        "brand": "Jyvenche",
+        "headline": "Building digital systems that scale.",
+        "subheadline": "Production-ready websites and platforms focused on clarity, performance, and long-term growth.",
+        "primaryCta": {
+            "label": "View Work",
+            "href": "/work"
+        },
+        "secondaryCta": {
+            "label": "Start a Project",
+            "href": "/start-project"
+        },
+        "trustLine": "Platforms, admin tools, and high-performance websites built for real operations—not templates."
+    },
+    "selectedWork": {
+        "intro": "A focused set of projects that demonstrate platform thinking, clean execution, and scalable structure.",
+        "featured": {
+            "title": "Fondamantal",
+            "label": "Music & Media Platform",
+            "summary": "A modular ecosystem for streaming, album experiences, broadcasting, and internal content management.",
+            "href": "/work/fondamantal",
+            "subSystems": [
+                {
+                    "title": "Music Library",
+                    "href": "/work/fondamantal-music-library"
+                },
+                {
+                    "title": "Digital Album Player",
+                    "href": "/work/fondamantal-album-player"
+                },
+                {
+                    "title": "Admin Dashboard",
+                    "href": "/work/fondamantal-admin-dashboard"
+                },
+                {
+                    "title": "Broadcast Platform",
+                    "href": "/work/fondamantal-broadcast"
+                }
+            ]
+        },
+        "secondary": {
+            "title": "BlissPointWell",
+            "label": "Healthcare Private Practice Website",
+            "summary": "A calm, trust-forward healthcare website designed for clarity and confidence.",
+            "href": "/work/blisspointwell"
+        }
+    },
+    "whatIDo": {
+        "intro": "I help clients move from \"we need a site\" to a structured product that supports real outcomes.",
+        "items": [
+            {
+                "title": "Design",
+                "points": [
+                    "Interface design with clear hierarchy",
+                    "UX structure and page flow planning",
+                    "Brand-aligned layouts"
+                ]
+            },
+            {
+                "title": "Development",
+                "points": [
+                    "Modern, responsive frontend builds",
+                    "Platform-ready component systems",
+                    "Admin dashboards and internal tooling"
+                ]
+            },
+            {
+                "title": "Delivery",
+                "points": [
+                    "Performance-focused implementation",
+                    "Launch readiness and clean handoff",
+                    "Scalable structure for future features"
+                ]
+            }
+        ]
+    },
+    "credibility": {
+        "title": "Built for production",
+        "body": "I build systems that hold up after launch—clean navigation, predictable structure, and interfaces designed for real users.",
+        "bullets": [
+            "Modular architecture that scales",
+            "Clean UX for public and internal experiences",
+            "Practical performance foundations",
+            "Clear scope and delivery process"
+        ]
+    },
+    "finalCta": {
+        "headline": "Have a project in mind?",
+        "body": "Let's build something that lasts—clear structure, premium execution, and a system you can scale.",
+        "primary": {
+            "label": "Start a Project",
+            "href": "/start-project"
+        },
+        "secondary": {
+            "label": "View Services",
+            "href": "/services"
+        }
+    }
+}

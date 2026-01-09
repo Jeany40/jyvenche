@@ -1,0 +1,50 @@
+{
+    "title": "Payment Terms",
+    "intro": "These terms outline how projects are billed, paid, and delivered. They exist to ensure clarity, protect both parties, and keep projects moving smoothly.",
+    "sections": [
+        {
+            "title": "Project Deposits",
+            "body": "All projects require a non-refundable deposit of 40–50% before work begins.",
+            "bullets": [
+                "No work is started without a deposit",
+                "Deposits secure scheduling and project time"
+            ]
+        },
+        {
+            "title": "Milestone Payments",
+            "body": "For larger or multi-phase projects, remaining balances may be divided into milestones.",
+            "bullets": [
+                "Milestones are agreed upon in advance",
+                "Each milestone must be paid before proceeding"
+            ]
+        },
+        {
+            "title": "Final Payment",
+            "body": "The final balance is due before launch, deployment, or delivery of final files.",
+            "bullets": [
+                "Websites are launched only after payment is complete",
+                "Handoff occurs after final payment"
+            ]
+        },
+        {
+            "title": "Accepted Payment Methods",
+            "body": "Payments are accepted via secure online invoice using credit or debit card."
+        },
+        {
+            "title": "Late Payments",
+            "body": "Invoices not paid within 5 calendar days of the due date may result in paused work and delayed timelines."
+        },
+        {
+            "title": "Refund Policy",
+            "body": "Due to the custom nature of services, all payments are non-refundable once work has begun. Deposits are non-refundable under all circumstances."
+        },
+        {
+            "title": "Chargebacks & Disputes",
+            "body": "Clients agree to contact Jyvenche directly before initiating a chargeback or payment dispute. Unauthorized chargebacks may result in service termination and loss of access to deliverables."
+        },
+        {
+            "title": "Agreement to Terms",
+            "body": "Submitting payment confirms acceptance of these payment terms and the associated project agreement."
+        }
+    ]
+}

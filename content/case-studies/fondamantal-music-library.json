@@ -1,0 +1,70 @@
+{
+    "slug": "fondamantal-music-library",
+    "title": "Fondamantal — Music Library",
+    "label": "Streaming Interface / Media System",
+    "summary": "A brand-owned listening experience built for discovery, clarity, and fast playback without third-party embed constraints.",
+    "links": {
+        "live": "https://www.fondamantal.com/music"
+    },
+    "meta": {
+        "role": [
+            "UX Structure",
+            "Frontend Development"
+        ],
+        "status": "Live",
+        "partOf": "Fondamantal Platform"
+    },
+    "sections": [
+        {
+            "type": "overview",
+            "title": "Overview",
+            "body": "The Music Library is the core listening experience within the Fondamantal platform—built as a first-class product feature rather than an external embed."
+        },
+        {
+            "type": "problem",
+            "title": "The Problem",
+            "body": "Third-party players limit branding, introduce distractions, and reduce control over navigation and performance."
+        },
+        {
+            "type": "solution",
+            "title": "The Solution",
+            "body": "A custom library focused on clear track organization, predictable playback behavior, minimal UI noise, and seamless integration with the platform."
+        },
+        {
+            "type": "features",
+            "title": "Key Features",
+            "bullets": [
+                "Clean track listing built for scanning and quick playback",
+                "Brand-consistent player UI aligned with the platform",
+                "Lightweight interaction patterns for speed",
+                "Responsive layout across devices",
+                "Expandable foundation for playlists/filtering later"
+            ]
+        },
+        {
+            "type": "stack",
+            "title": "Technology Stack",
+            "bullets": [
+                "React / Next.js",
+                "Component-based audio UI",
+                "Modern layout system"
+            ]
+        },
+        {
+            "type": "outcome",
+            "title": "Outcome",
+            "body": "A cohesive, controlled listening environment that strengthens brand ownership and sets a foundation for deeper audience features."
+        },
+        {
+            "type": "takeaway",
+            "title": "Key Takeaway",
+            "body": "Owning the playback layer improves branding, performance, and long-term flexibility."
+        }
+    ],
+    "cta": {
+        "headline": "Planning a custom media experience?",
+        "body": "If your platform requires audio, video, or content delivery beyond embeds, I can help structure a system that scales.",
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

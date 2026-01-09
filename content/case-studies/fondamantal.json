@@ -1,0 +1,88 @@
+{
+    "slug": "fondamantal",
+    "title": "Fondamantal",
+    "label": "Music & Media Platform",
+    "summary": "A modular ecosystem for streaming, album experiences, broadcasting, and internal content management under one brand-owned platform.",
+    "links": {
+        "live": "https://www.fondamantal.com"
+    },
+    "meta": {
+        "role": [
+            "Product Design",
+            "Frontend Development",
+            "System Architecture"
+        ],
+        "status": "Live"
+    },
+    "platformBreakdown": [
+        {
+            "title": "Music Library",
+            "href": "/work/fondamantal-music-library"
+        },
+        {
+            "title": "Digital Album Player",
+            "href": "/work/fondamantal-album-player"
+        },
+        {
+            "title": "Admin Dashboard",
+            "href": "/work/fondamantal-admin-dashboard"
+        },
+        {
+            "title": "Broadcast Platform",
+            "href": "/work/fondamantal-broadcast"
+        }
+    ],
+    "sections": [
+        {
+            "type": "overview",
+            "title": "Overview",
+            "body": "Fondamantal is a modular music and media platform built to centralize content ownership, presentation, and internal operations—reducing dependency on fragmented third-party tools."
+        },
+        {
+            "type": "problem",
+            "title": "The Problem",
+            "body": "Independent artists face fragmented distribution, limited brand control, and a lack of internal operational tooling when relying entirely on external platforms."
+        },
+        {
+            "type": "solution",
+            "title": "The Solution",
+            "body": "A platform-first architecture composed of distinct but connected systems: streaming library, album experiences, broadcast publishing, and an admin dashboard—sharing a consistent foundation and design language."
+        },
+        {
+            "type": "features",
+            "title": "Key Features",
+            "bullets": [
+                "Modular platform architecture (systems evolve independently)",
+                "Brand-controlled media experience",
+                "Clear separation of public and internal systems",
+                "Scalable content structure for growth",
+                "Consistent UX across the ecosystem"
+            ]
+        },
+        {
+            "type": "stack",
+            "title": "Technology Stack",
+            "bullets": [
+                "React / Next.js",
+                "Component-based frontend architecture",
+                "Performance-focused rendering patterns"
+            ]
+        },
+        {
+            "type": "outcome",
+            "title": "Outcome",
+            "body": "A centralized platform that supports releases, audience engagement, and internal workflows—positioned for future monetization and expansion."
+        },
+        {
+            "type": "takeaway",
+            "title": "Key Takeaway",
+            "body": "Platform thinking enables long-term ownership, scalability, and operational control."
+        }
+    ],
+    "cta": {
+        "headline": "Interested in building a platform like this?",
+        "body": "If you're planning a media platform or content ecosystem that needs to scale over time, I'd be happy to review your project.",
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

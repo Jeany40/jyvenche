@@ -1,0 +1,30 @@
+{
+    "title": "Services",
+    "intro": "I design and build digital systems meant to last—focused on structure, clarity, and maintainability.",
+    "services": [
+        {
+            "title": "Brand & Marketing Websites",
+            "body": "Purpose-driven websites designed to establish credibility and communicate clearly.",
+            "outcome": "A composed, professional website that feels intentional."
+        },
+        {
+            "title": "Platforms & Web Applications",
+            "body": "Custom platforms built as systems, not single-use sites.",
+            "outcome": "A scalable foundation that supports long-term growth."
+        },
+        {
+            "title": "Admin Dashboards & Internal Tools",
+            "body": "Purpose-built internal tools designed around real workflows.",
+            "outcome": "Reduced friction and greater operational control."
+        }
+    ],
+    "process": [
+        "Discovery & Structure",
+        "Design & Build",
+        "Review & Launch"
+    ],
+    "finalCta": {
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Pay Invoice",
+    "intro": "If you've received an invoice from Jyvenche, you can submit payment securely using the link below.",
+    "sections": [
+        {
+            "title": "Secure Payment",
+            "body": "Payments are processed through a secure online payment provider. Receipts are issued automatically."
+        },
+        {
+            "title": "Pay Your Invoice",
+            "body": "Use the Pay Invoice button to complete payment through your secure link."
+        },
+        {
+            "title": "Important Notes",
+            "bullets": [
+                "This page is intended only for clients with an issued invoice.",
+                "If you do not have an invoice link, request one via email.",
+                "Payments are subject to the published Payment Terms."
+            ]
+        },
+        {
+            "title": "Need Help?",
+            "body": "If you have questions about an invoice or payment status, please reach out directly by email."
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "slug": "fondamantal-broadcast",
+    "title": "Fondamantal — Broadcast Platform",
+    "label": "Media Publishing / Brand Communication",
+    "summary": "A brand-owned publishing channel for updates and announcements, designed for consistency, permanence, and platform cohesion.",
+    "links": {
+        "live": "https://www.fondamantal.com/broadcast"
+    },
+    "meta": {
+        "role": [
+            "UX Structure",
+            "Frontend Development"
+        ],
+        "status": "Live",
+        "partOf": "Fondamantal Platform"
+    },
+    "sections": [
+        {
+            "type": "overview",
+            "title": "Overview",
+            "body": "The Broadcast Platform is Fondamantal's first-party communication layer—centralizing announcements and updates outside third-party algorithm constraints."
+        },
+        {
+            "type": "problem",
+            "title": "The Problem",
+            "body": "External social platforms bury content, limit presentation consistency, and reduce long-term accessibility of important updates."
+        },
+        {
+            "type": "solution",
+            "title": "The Solution",
+            "body": "A lightweight publishing system that preserves posts over time, maintains brand consistency, and integrates directly with the broader platform."
+        },
+        {
+            "type": "features",
+            "title": "Key Features",
+            "bullets": [
+                "Clear chronological structure for updates",
+                "Brand-consistent presentation across the ecosystem",
+                "Content permanence compared to social feeds",
+                "Minimal UI focused on the message",
+                "Expandable foundation for tags/categories later"
+            ]
+        },
+        {
+            "type": "stack",
+            "title": "Technology Stack",
+            "bullets": [
+                "React / Next.js",
+                "Reusable content components",
+                "Modern layout system"
+            ]
+        },
+        {
+            "type": "outcome",
+            "title": "Outcome",
+            "body": "A stable, brand-owned channel that strengthens platform identity and reduces dependency on third-party distribution."
+        },
+        {
+            "type": "takeaway",
+            "title": "Key Takeaway",
+            "body": "Owning the communication layer creates stability and long-term value."
+        }
+    ],
+    "cta": {
+        "headline": "Looking to own your content and communication?",
+        "body": "If you want a publishing system that fits your ecosystem, I can help design and build it.",
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

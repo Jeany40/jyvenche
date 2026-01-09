@@ -1,0 +1,31 @@
+{
+    "title": "About",
+    "intro": "Jyvenche is a freelance development studio focused on clarity, structure, and long-term intent.",
+    "philosophy": [
+        "Clarity over complexity",
+        "Systems over pages",
+        "Ownership and control",
+        "Durability"
+    ],
+    "process": [
+        "Discovery & Definition",
+        "Design & Development",
+        "Review & Launch"
+    ],
+    "fit": {
+        "goodFor": [
+            "Clients who value structure",
+            "Scalable, maintainable systems",
+            "Clear communication"
+        ],
+        "notFor": [
+            "Template-driven builds",
+            "Lowest-cost solutions",
+            "Unstructured experimentation"
+        ]
+    },
+    "finalCta": {
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

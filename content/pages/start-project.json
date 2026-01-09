@@ -1,0 +1,51 @@
+{
+    "title": "Start a Project",
+    "intro": "Use the form below to share details about your project. This helps determine whether it's a good fit and how to approach scope, timeline, and structure.",
+    "responseTime": "You'll receive a response within 1–2 business days.",
+    "leftColumn": {
+        "howItWorksTitle": "How This Works",
+        "howItWorksSteps": [
+            {
+                "title": "Submit your project details",
+                "body": "Share what you're building, goals, and constraints."
+            },
+            {
+                "title": "Project review",
+                "body": "I review submissions personally to assess fit, scope, and feasibility."
+            },
+            {
+                "title": "Next steps",
+                "body": "If aligned, you'll receive a proposal outlining scope, timeline, and investment."
+            }
+        ],
+        "whatIBuildTitle": "What I Build",
+        "whatIBuildBullets": [
+            "Brand and marketing websites",
+            "Scalable platforms and web applications",
+            "Admin dashboards and internal tools"
+        ],
+        "budgetTitle": "Typical Starting Budgets",
+        "budgetBullets": [
+            "Websites: $1,500 – $15,000+",
+            "Platforms: $5,000 – $50,000+",
+            "Admin tools: $2,500 – $30,000+"
+        ],
+        "minimumProject": "Minimum project size: $1,500",
+        "timelineTitle": "Timeline Guidance",
+        "timelineBullets": [
+            "2–4 weeks for focused websites",
+            "1–3 months for platforms or systems"
+        ]
+    },
+    "rightColumn": {
+        "beforeSubmitTitle": "Before You Submit",
+        "beforeSubmitBody": "Please provide as much detail as possible. Clear input helps avoid unnecessary back-and-forth and allows for a more accurate proposal.",
+        "privacyTitle": "Privacy",
+        "privacyBody": "Information submitted through this form is used solely to evaluate your project and respond appropriately."
+    },
+    "successState": {
+        "headline": "Inquiry received",
+        "body": "Thank you for sharing your project details. I'll review the information and follow up within 1–2 business days with next steps."
+    },
+    "footerNote": "Submitting this form does not guarantee acceptance. Projects are selected based on alignment, scope, and availability."
+}

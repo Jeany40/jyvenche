@@ -1,0 +1,38 @@
+{
+    "title": "Pricing",
+    "intro": "Pricing reflects scope, complexity, and long-term value.",
+    "minimum": "$1,500",
+    "ranges": [
+        {
+            "service": "Websites",
+            "range": "$1,500 – $15,000+"
+        },
+        {
+            "service": "Platforms",
+            "range": "$5,000 – $50,000+"
+        },
+        {
+            "service": "Admin Tools",
+            "range": "$2,500 – $30,000+"
+        }
+    ],
+    "retainers": [
+        {
+            "type": "Maintenance",
+            "range": "$250 – $750 / month"
+        },
+        {
+            "type": "Growth",
+            "range": "$1,000 – $3,000+ / month"
+        }
+    ],
+    "paymentStructure": [
+        "40–50% deposit to begin work",
+        "Milestone payments for larger projects",
+        "Final payment before launch"
+    ],
+    "finalCta": {
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

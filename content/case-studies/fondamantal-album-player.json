@@ -1,0 +1,70 @@
+{
+    "slug": "fondamantal-album-player",
+    "title": "Fondamantal — Digital Album Player",
+    "label": "Album Experience / Productized Media",
+    "summary": "An album-centric experience designed to preserve sequencing, identity, and narrative context inside a brand-owned platform.",
+    "links": {
+        "live": "https://www.fondamantal.com/album/ouve-sek-la-digital-album/player"
+    },
+    "meta": {
+        "role": [
+            "UX Design",
+            "Frontend Development"
+        ],
+        "status": "Live",
+        "partOf": "Fondamantal Platform"
+    },
+    "sections": [
+        {
+            "type": "overview",
+            "title": "Overview",
+            "body": "The Digital Album Player presents releases as cohesive digital products—encouraging complete listening rather than fragmented track consumption."
+        },
+        {
+            "type": "problem",
+            "title": "The Problem",
+            "body": "Albums are often consumed out of sequence with little continuity or brand ownership when hosted purely on third-party platforms."
+        },
+        {
+            "type": "solution",
+            "title": "The Solution",
+            "body": "A focused album view that preserves sequencing, integrates artwork, minimizes distractions, and aligns with the broader platform's visual language."
+        },
+        {
+            "type": "features",
+            "title": "Key Features",
+            "bullets": [
+                "Album-centric layout unifying artwork, tracklist, and controls",
+                "Sequential playback designed for album flow",
+                "Minimal UI to keep focus on the music",
+                "Consistent experience across devices",
+                "Reusable structure for future releases"
+            ]
+        },
+        {
+            "type": "stack",
+            "title": "Technology Stack",
+            "bullets": [
+                "React / Next.js",
+                "Reusable media components",
+                "Modern layout system"
+            ]
+        },
+        {
+            "type": "outcome",
+            "title": "Outcome",
+            "body": "A controlled, immersive release experience that strengthens engagement and positions the platform as a destination."
+        },
+        {
+            "type": "takeaway",
+            "title": "Key Takeaway",
+            "body": "Productizing content creates deeper engagement and long-term brand value."
+        }
+    ],
+    "cta": {
+        "headline": "Launching a digital product or media experience?",
+        "body": "If you want releases to feel cohesive and intentional, I can help structure the experience.",
+        "label": "Start a Project",
+        "href": "/start-project"
+    }
+}

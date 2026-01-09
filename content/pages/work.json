@@ -1,0 +1,31 @@
+{
+    "title": "Work",
+    "intro": "A curated selection of projects that demonstrate platform thinking, clean execution, and scalable structure.",
+    "featured": {
+        "title": "Fondamantal",
+        "label": "Music & Media Platform",
+        "href": "/work/fondamantal",
+        "highlights": [
+            "Platform architecture",
+            "Public and internal system separation",
+            "Media-first UX"
+        ]
+    },
+    "additional": [
+        {
+            "title": "BlissPointWell",
+            "label": "Healthcare Private Practice Website",
+            "href": "/work/blisspointwell",
+            "highlights": [
+                "Trust-focused UI",
+                "Clear service hierarchy",
+                "Accessible, mobile-first layout"
+            ]
+        }
+    ],
+    "finalCta": {
+        "headline": "Interested in a similar project?",
+        "body": "If you're looking to build a structured, scalable system, I'd be happy to review your project.",
+        "href": "/start-project"
+    }
+}
